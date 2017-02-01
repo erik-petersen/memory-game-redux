@@ -1,1 +1,20 @@
+$backgroundGrey: #efefeb;
+$mainFontColor: #333;
+$mainFontSize: 3.5em;
 
+body {
+  width: 100%;
+  text-align: center;
+  color: $mainFontColor;
+  background-color: $backgroundGrey;
+  -webkit-font-smoothing: antialiased;
+
+  a {
+    text-decoration: none;
+    color: $mainFontColor;
+  }
+} // end body
+
+@import "partials/landing";
+@import "partials/easy";
+@import "partials/hard";
