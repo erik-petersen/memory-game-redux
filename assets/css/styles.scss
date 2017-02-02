@@ -6,8 +6,14 @@ $colorMainFont: #333;
 $colorLightbulb: #dbdb0b;
 $sizeMainFont: 4em;
 
+html {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
+  margin: 0;
   text-align: center;
   color: $colorMainFont;
   background-color: $colorBackgroundGrey;
@@ -17,6 +23,11 @@ body {
     text-decoration: none;
     color: $colorMainFont;
   }
+
+  ul {
+    list-style-type: none;
+  }
+
 } // end body
 
 @import "partials/landing";
