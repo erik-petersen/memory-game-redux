@@ -9,22 +9,30 @@ body {
     color: #333; }
 
 h1 {
-  font-size: 3.5em;
+  font-family: "Barrio", sans-serif;
+  font-size: 4em;
   margin-top: 1.5em; }
 
+.fa-lightbulb-o {
+  color: #dbdb0b; }
+
 nav {
+  font-family: "Comfortaa", sans-serif;
   margin: 2em auto 0;
-  width: 40%;
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 2em; }
-  nav li:hover,
-  nav li a:hover {
-    color: #fff; }
+  nav li {
+    width: 10em;
+    margin: auto; }
+  nav li:hover {
+    cursor: pointer; }
+    nav li:hover a {
+      color: #fff; }
   nav li:nth-child(odd):hover {
-    background-color: blue;
-    transform: perspective(10em) rotateY(-25deg); }
+    background-color: #ba0000;
+    transform: perspective(10em) rotateY(-35deg); }
   nav li:nth-child(even):hover {
-    background-color: red;
-    transform: perspective(10em) rotateY(25deg); }
+    background-color: #ba0000;
+    transform: perspective(10em) rotateY(35deg); }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,17 +1,21 @@
-$backgroundGrey: #efefeb;
-$mainFontColor: #333;
-$mainFontSize: 3.5em;
+$fontHeading: "Barrio", sans-serif;
+$fontNav: "Comfortaa", sans-serif;
+$colorBackgroundGrey: #efefeb;
+$colorNavHover: #ba0000;
+$colorMainFont: #333;
+$colorLightbulb: #dbdb0b;
+$sizeMainFont: 4em;
 
 body {
   width: 100%;
   text-align: center;
-  color: $mainFontColor;
-  background-color: $backgroundGrey;
+  color: $colorMainFont;
+  background-color: $colorBackgroundGrey;
   -webkit-font-smoothing: antialiased;
 
   a {
     text-decoration: none;
-    color: $mainFontColor;
+    color: $colorMainFont;
   }
 } // end body
 

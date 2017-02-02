@@ -1,28 +1,41 @@
 h1 {
-  font-size: $mainFontSize;
+  font-family: $fontHeading;
+  font-size: $sizeMainFont;
   margin-top: 1.5em;
 }
 
-nav {
-  margin: 2em auto 0;
-  width: 40%;
-  font-size: $mainFontSize;
-  line-height: 2em;
-  // background-color: green;
+.fa-lightbulb-o {
+  color: $colorLightbulb;
+}
 
-  li:hover,
-  li a:hover {
-    color: #fff;
+nav {
+  font-family: $fontNav;
+  margin: 2em auto 0;
+  font-size: $sizeMainFont - 1em;
+  line-height: 2em;
+
+  li {
+    width: 10em;
+    margin: auto;
   }
 
+  li:hover {
+    cursor: pointer;
+
+    a {
+      color: #fff;
+    }
+
+  } // end li:hover
+
   li:nth-child(odd):hover {
-    background-color: blue;
-    transform: perspective(10em) rotateY(-25deg);
+    background-color: $colorNavHover;
+    transform: perspective(10em) rotateY(-35deg);
   }
 
   li:nth-child(even):hover {
-    background-color: red;
-    transform: perspective(10em) rotateY(25deg);
+    background-color: $colorNavHover;
+    transform: perspective(10em) rotateY(35deg);
   }
 
 } // end nav
