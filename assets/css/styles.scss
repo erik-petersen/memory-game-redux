@@ -15,10 +15,14 @@ $marginNavTop: 3.5em;
   box-sizing: border-box;
 }
 
+body {
+  background-color: $colorBackgroundGrey;
+}
+
 a {
   text-decoration: none;
 }
 
 @import "partials/home";
-// @import "partials/easy";
+@import "partials/easy";
 // @import "partials/hard";

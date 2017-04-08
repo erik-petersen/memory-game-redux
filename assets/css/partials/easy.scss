@@ -1,0 +1,69 @@
+.easy-body {
+
+  .easy-wrapper {
+
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-family: $fontHeading;
+      font-size: $sizeMainFont;
+      margin-top: $marginH1Top;
+    }
+
+    a {
+      color: $colorMainFont;
+    }
+
+    nav {
+      font-family: $fontNav;
+      font-size: $sizeNavFont;
+      margin-top: .4em;
+
+      li {
+        display: inline-block;
+        margin: 0 .25em;
+      }
+
+      li,
+      a {
+        color: $colorMainFont;
+        padding: .25em 0;
+        cursor: pointer;
+      }
+
+      li::nth-child(2) {
+        margin-top: 1.5em;
+      }
+    } // end nav
+
+    main {
+
+      margin-top: 7em;
+
+      ul {
+        display: inline-flex;
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 .75em;
+        background-color: blue;
+        width: 6.5em;
+        height: 6.5em;
+        cursor: pointer;
+      }
+
+      .card-icon {
+        font-size: 4em;
+        color: #fff;
+      }
+
+    } // end main
+
+  } // end .easy-wrapper
+
+} // end .easy-body
