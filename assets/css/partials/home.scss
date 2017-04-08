@@ -1,0 +1,35 @@
+.home-body {
+
+  background-color: $colorBackgroundGrey;
+
+  .home-wrapper {
+
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-family: $fontHeading;
+      font-size: $sizeMainFont;
+      color: $colorMainFont;
+      margin-top: $marginH1Top;
+    }
+
+    nav {
+      font-family: $fontNav;
+      font-size: $sizeNavFont;
+      margin-top: $marginNavTop;
+
+      li,
+      a {
+        color: $colorMainFont;
+        margin-top: 1.5em;
+        padding: .25em 0;
+        cursor: pointer;
+      }
+    } // end nav
+
+  } // end .home-wrapper
+
+
+} // end .home-body

@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio|Comfortaa');
+
 $fontHeading: "Barrio", sans-serif;
 $fontNav: "Comfortaa", sans-serif;
 $colorBackgroundGrey: #efefeb;
 $colorNavHover: #ba0000;
 $colorMainFont: #333;
 $colorLightbulb: #dbdb0b;
-$sizeMainFont: 4em;
+$sizeMainFont: 3em;
+$sizeNavFont: 2.35em;
+$marginH1Top: 2em;
+$marginNavTop: 3.5em;
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "partials/home";
+// @import "partials/easy";
+// @import "partials/hard";
