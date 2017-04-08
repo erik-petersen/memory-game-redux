@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+.fa-lightbulb-o {
+  color: firebrick; }
+
 body {
   background-color: #efefeb; }
 
@@ -61,10 +64,11 @@ a {
       justify-content: center;
       align-items: center;
       margin: 0 .75em;
-      background-color: blue;
+      background-color: firebrick;
       width: 6.5em;
       height: 6.5em;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 4px; }
     .easy-body .easy-wrapper main .card-icon {
       font-size: 4em;
       color: #fff; }

@@ -51,10 +51,11 @@
         justify-content: center;
         align-items: center;
         margin: 0 .75em;
-        background-color: blue;
+        background-color: firebrick;
         width: 6.5em;
         height: 6.5em;
         cursor: pointer;
+        border-radius: 4px;
       }
 
       .card-icon {
