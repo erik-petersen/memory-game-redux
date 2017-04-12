@@ -17,12 +17,12 @@ a {
   text-align: center; }
   .home-body .home-wrapper h1 {
     font-family: "Barrio", sans-serif;
-    font-size: 8.5em;
+    font-size: 8em;
     color: #333;
-    margin-top: 1.5em; }
+    margin-top: 1em; }
   .home-body .home-wrapper nav {
     font-family: "Comfortaa", sans-serif;
-    font-size: 7em;
+    font-size: 6.5em;
     margin-top: 2.5em; }
     .home-body .home-wrapper nav li,
     .home-body .home-wrapper nav a {
@@ -37,13 +37,13 @@ a {
   text-align: center; }
   .easy-body .easy-wrapper h1 {
     font-family: "Barrio", sans-serif;
-    font-size: 8.5em;
-    margin-top: 1.5em; }
+    font-size: 8em;
+    margin-top: 1em; }
   .easy-body .easy-wrapper a {
     color: #333; }
   .easy-body .easy-wrapper nav {
     font-family: "Comfortaa", sans-serif;
-    font-size: 6.75em;
+    font-size: 6.25em;
     margin-top: .5em; }
     .easy-body .easy-wrapper nav li {
       display: inline-block;
@@ -56,7 +56,7 @@ a {
     .easy-body .easy-wrapper nav li::nth-child(2) {
       margin-top: 1.5em; }
   .easy-body .easy-wrapper main {
-    margin-top: 14.5em; }
+    margin-top: 18em; }
     .easy-body .easy-wrapper main ul {
       display: inline-flex; }
     .easy-body .easy-wrapper main .card {
