@@ -1,0 +1,83 @@
+.hard-body {
+
+  width: 100%;
+  margin: auto;
+
+  .hard-wrapper {
+
+    // width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-family: $fontHeading;
+      font-size: $sizeMainFont;
+      margin-top: $marginH1Top;
+    }
+
+    a {
+      color: $colorMainFont;
+    }
+
+    nav {
+      font-family: $fontNav;
+      font-size: $sizeNavFont - .25em;
+      margin-top: .5em;
+
+      li {
+        display: inline-block;
+        margin: 0 .1em;
+      }
+
+      li,
+      a {
+        color: $colorMainFont;
+        padding: .25em 0;
+        cursor: pointer;
+      }
+
+      li::nth-child(2) {
+        margin-top: 1.5em;
+      }
+    } // end nav
+
+    main {
+      // width: 90%;
+      display: flex;
+      align-items: center;
+      margin-top: 7em;
+
+      .row {
+        width: calc( 100% / 12 * 3);
+      }
+
+      ul {
+        display: inline-flex;
+      }
+
+      .col-3 {
+        width: calc( 100% / 12 * 3);
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 1em;
+        background-color: firebrick;
+        width: 9em;
+        height: 9em;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      .card-icon {
+        font-size: 5em;
+        color: #fff;
+      }
+
+    } // end main
+
+  } // end .hard-wrapper
+
+} // end .hard-body

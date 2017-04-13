@@ -73,4 +73,54 @@ a {
       font-size: 10em;
       color: #fff; }
 
+.hard-body {
+  width: 100%;
+  margin: auto; }
+  .hard-body .hard-wrapper {
+    margin: 0 auto;
+    text-align: center; }
+    .hard-body .hard-wrapper h1 {
+      font-family: "Barrio", sans-serif;
+      font-size: 8em;
+      margin-top: 1em; }
+    .hard-body .hard-wrapper a {
+      color: #333; }
+    .hard-body .hard-wrapper nav {
+      font-family: "Comfortaa", sans-serif;
+      font-size: 6.25em;
+      margin-top: .5em; }
+      .hard-body .hard-wrapper nav li {
+        display: inline-block;
+        margin: 0 .1em; }
+      .hard-body .hard-wrapper nav li,
+      .hard-body .hard-wrapper nav a {
+        color: #333;
+        padding: .25em 0;
+        cursor: pointer; }
+      .hard-body .hard-wrapper nav li::nth-child(2) {
+        margin-top: 1.5em; }
+    .hard-body .hard-wrapper main {
+      display: flex;
+      align-items: center;
+      margin-top: 7em; }
+      .hard-body .hard-wrapper main .row {
+        width: calc( 100% / 12 * 3); }
+      .hard-body .hard-wrapper main ul {
+        display: inline-flex; }
+      .hard-body .hard-wrapper main .col-3 {
+        width: calc( 100% / 12 * 3); }
+      .hard-body .hard-wrapper main .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 1em;
+        background-color: firebrick;
+        width: 9em;
+        height: 9em;
+        cursor: pointer;
+        border-radius: 50%; }
+      .hard-body .hard-wrapper main .card-icon {
+        font-size: 5em;
+        color: #fff; }
+
 /*# sourceMappingURL=styles.css.map */
