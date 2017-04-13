@@ -42,17 +42,18 @@
     } // end nav
 
     main {
-      // width: 90%;
+
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin-top: 7em;
+      margin-top: 4em;
 
       .row {
-        width: calc( 100% / 12 * 3);
+        display: flex;
       }
 
-      ul {
-        display: inline-flex;
+      .card {
+        width: calc( 100% / 12 * 3);
       }
 
       .col-3 {
@@ -63,7 +64,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2em 1em;
+        margin: 1em 1em;
         background-color: firebrick;
         width: 9em;
         height: 9em;

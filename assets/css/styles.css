@@ -19,7 +19,7 @@ a {
     font-family: "Barrio", sans-serif;
     font-size: 8em;
     color: #333;
-    margin-top: 1em; }
+    margin-top: 0.75em; }
   .home-body .home-wrapper nav {
     font-family: "Comfortaa", sans-serif;
     font-size: 6.5em;
@@ -30,6 +30,8 @@ a {
       margin-top: 1.5em;
       padding: .25em 0;
       cursor: pointer; }
+  .home-body .home-wrapper main {
+    width: 90%; }
 
 .easy-body .easy-wrapper {
   width: 90%;
@@ -38,7 +40,7 @@ a {
   .easy-body .easy-wrapper h1 {
     font-family: "Barrio", sans-serif;
     font-size: 8em;
-    margin-top: 1em; }
+    margin-top: 0.75em; }
   .easy-body .easy-wrapper a {
     color: #333; }
   .easy-body .easy-wrapper nav {
@@ -82,7 +84,7 @@ a {
     .hard-body .hard-wrapper h1 {
       font-family: "Barrio", sans-serif;
       font-size: 8em;
-      margin-top: 1em; }
+      margin-top: 0.75em; }
     .hard-body .hard-wrapper a {
       color: #333; }
     .hard-body .hard-wrapper nav {
@@ -101,19 +103,20 @@ a {
         margin-top: 1.5em; }
     .hard-body .hard-wrapper main {
       display: flex;
+      justify-content: center;
       align-items: center;
-      margin-top: 7em; }
+      margin-top: 4em; }
       .hard-body .hard-wrapper main .row {
+        display: flex; }
+      .hard-body .hard-wrapper main .card {
         width: calc( 100% / 12 * 3); }
-      .hard-body .hard-wrapper main ul {
-        display: inline-flex; }
       .hard-body .hard-wrapper main .col-3 {
         width: calc( 100% / 12 * 3); }
       .hard-body .hard-wrapper main .card {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2em 1em;
+        margin: 1em 1em;
         background-color: firebrick;
         width: 9em;
         height: 9em;
