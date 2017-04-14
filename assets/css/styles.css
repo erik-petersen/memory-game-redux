@@ -73,7 +73,8 @@ a {
       border-radius: 50%; }
     .easy-body .easy-wrapper main .card-icon {
       font-size: 10em;
-      color: #fff; }
+      color: #fff;
+      display: none; }
 
 .hard-body {
   width: 100%;
@@ -124,6 +125,7 @@ a {
         border-radius: 50%; }
       .hard-body .hard-wrapper main .card-icon {
         font-size: 5em;
-        color: #fff; }
+        color: #fff;
+        display: none; }
 
 /*# sourceMappingURL=styles.css.map */
