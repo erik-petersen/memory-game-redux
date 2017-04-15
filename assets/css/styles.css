@@ -80,6 +80,7 @@ a {
   width: 100%;
   margin: auto; }
   .hard-body .hard-wrapper {
+    min-height: calc( 100vh - 14em );
     margin: 0 auto;
     text-align: center; }
     .hard-body .hard-wrapper h1 {
@@ -127,5 +128,14 @@ a {
         font-size: 5em;
         color: #fff;
         display: none; }
+  .hard-body footer {
+    background-color: grey;
+    height: 8.5em; }
+    .hard-body footer .fa-heartbeat {
+      font-size: 3.5em;
+      color: #fff;
+      float: right;
+      margin-top: .6em;
+      margin-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

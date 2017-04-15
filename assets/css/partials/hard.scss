@@ -5,7 +5,7 @@
 
   .hard-wrapper {
 
-    // width: 90%;
+    min-height: calc( 100vh - 14em );
     margin: 0 auto;
     text-align: center;
 
@@ -81,5 +81,19 @@
     } // end main
 
   } // end .hard-wrapper
+
+  footer {
+
+    background-color: grey;
+    height: 8.5em;
+
+    .fa-heartbeat {
+      font-size: 3.5em;
+      color: #fff;
+      float: right;
+      margin-top: .6em;
+      margin-right: 10px;
+    }
+  }
 
 } // end .hard-body
