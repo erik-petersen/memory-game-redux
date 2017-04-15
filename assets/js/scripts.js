@@ -26,35 +26,39 @@ $(function() {
     else if( clicks === 2 ) {
 
       console.log( clicks );
-      secondCard = $( this );
-      clicks = 0;
-
-
-      if( firstCard.children().attr( "class" ) == secondCard.children().attr( "class" ) ) {
-
-        numCorrect++;
-        console.log( "They match" );
-        firstCard.prop( "disabled", true );
-        secondCard.prop( "disabled", true );
-
-        if( numCorrect == 12 ) {
-          alert( "Way to go!!!  You Won!!!" );
-        } // end if all are correct
-
-      } // end if two cards match
+      if( $(this).index() == firstCard.index() ) {
+        clicks = 0;
+      }
 
       else {
-        numIncorrect++;
-        firstCard.children().delay(1500).hide(1);
-        secondCard.children().delay(1500).hide(1);
-        $( hearts[numIncorrect - 1] ).hide();
+        secondCard = $( this );
+        clicks = 0;
 
-        if( numIncorrect == 7 ) {
-          alert( "Uffda!!! That did not go well!!!" );
+        if( firstCard.children().attr( "class" ) == secondCard.children().attr( "class" ) ) {
+
+          numCorrect++;
+          console.log( "They match" );
+          firstCard.prop( "disabled", true );
+          secondCard.prop( "disabled", true );
+
+          if( numCorrect == 12 ) {
+            alert( "Way to go!!!  You Won!!!" );
+          } // end if all are correct
+
+        } // end if two cards match
+
+        else {
+          numIncorrect++;
+          firstCard.children().delay(1500).hide(1);
+          secondCard.children().delay(1500).hide(1);
+          $( hearts[numIncorrect - 1] ).hide();
+
+          if( numIncorrect == 7 ) {
+            alert( "Uffda!!! That did not go well!!!" );
+          }
         }
-      }
-    } // end else if
-
+      } // end else if
+  }
   }); // end click on .card
 
 })

@@ -2,6 +2,7 @@
 
   .easy-wrapper {
 
+    min-height: calc( 100vh - 14.5em );
     width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -19,7 +20,7 @@
     nav {
       font-family: $fontNav;
       font-size: $sizeNavFont - .25em;
-      margin-top: .5em;
+      margin-top: .15em;
 
       li {
         display: inline-block;

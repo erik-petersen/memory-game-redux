@@ -8,6 +8,16 @@
 body {
   background-color: #efefeb; }
 
+footer {
+  background-color: grey;
+  height: 9em; }
+  footer .fa-heartbeat {
+    font-size: 3.5em;
+    color: #fff;
+    float: right;
+    margin-top: .75em;
+    margin-right: 10px; }
+
 a {
   text-decoration: none; }
 
@@ -34,6 +44,7 @@ a {
     width: 90%; }
 
 .easy-body .easy-wrapper {
+  min-height: calc( 100vh - 14.5em );
   width: 90%;
   margin: 0 auto;
   text-align: center; }
@@ -46,7 +57,7 @@ a {
   .easy-body .easy-wrapper nav {
     font-family: "Comfortaa", sans-serif;
     font-size: 6.25em;
-    margin-top: .5em; }
+    margin-top: .15em; }
     .easy-body .easy-wrapper nav li {
       display: inline-block;
       margin: 0 .1em; }
@@ -80,7 +91,7 @@ a {
   width: 100%;
   margin: auto; }
   .hard-body .hard-wrapper {
-    min-height: calc( 100vh - 14em );
+    min-height: calc( 100vh - 14.5em );
     margin: 0 auto;
     text-align: center; }
     .hard-body .hard-wrapper h1 {
@@ -92,7 +103,7 @@ a {
     .hard-body .hard-wrapper nav {
       font-family: "Comfortaa", sans-serif;
       font-size: 6.25em;
-      margin-top: .5em; }
+      margin-top: .15em; }
       .hard-body .hard-wrapper nav li {
         display: inline-block;
         margin: 0 .1em; }
@@ -107,7 +118,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 4em; }
+      margin-top: 3.75em; }
       .hard-body .hard-wrapper main .row {
         display: flex; }
       .hard-body .hard-wrapper main .card {
@@ -128,14 +139,5 @@ a {
         font-size: 5em;
         color: #fff;
         display: none; }
-  .hard-body footer {
-    background-color: grey;
-    height: 8.5em; }
-    .hard-body footer .fa-heartbeat {
-      font-size: 3.5em;
-      color: #fff;
-      float: right;
-      margin-top: .6em;
-      margin-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
