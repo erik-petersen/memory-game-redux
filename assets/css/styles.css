@@ -48,13 +48,22 @@ a {
       cursor: pointer; }
   .home-body .home-wrapper main {
     width: 90%; }
+  @media screen and (orientation: portrait) {
+    .home-body .home-wrapper {
+      min-height: calc( 100vh - 5em ); }
+      .home-body .home-wrapper h1 {
+        font-size: 8em;
+        margin-top: 0.75em; }
+      .home-body .home-wrapper nav {
+        width: 100%;
+        font-size: 6.5em;
+        margin-top: .25em; } }
   @media screen and (orientation: landscape) {
     .home-body .home-wrapper {
       min-height: calc( 100vh - 5em ); }
       .home-body .home-wrapper h1 {
         font-size: 4.5em;
-        margin-top: 1.5em;
-        margin-left: 4%; }
+        margin-top: 1em; }
       .home-body .home-wrapper nav {
         width: 100%;
         font-size: 3.25em;

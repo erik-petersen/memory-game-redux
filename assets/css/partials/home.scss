@@ -31,14 +31,29 @@
       width: 90%;
     }
 
+    @media screen and ( orientation: portrait ) {
+
+      min-height: calc( 100vh - 5em );
+
+      h1 {
+        font-size: $sizeMainFont;
+        margin-top: $marginH1Top;
+      }
+
+      nav {
+        width: 100%;
+        font-size: $sizeNavFont;
+        margin-top: .25em;
+      } // end nav
+    } // end orientation: portrait
+
     @media screen and ( orientation: landscape ) {
 
       min-height: calc( 100vh - 5em );
 
       h1 {
         font-size: $sizeMainFont - 3.5em;
-        margin-top: $marginH1Top + .75em;
-        margin-left: 4%;
+        margin-top: $marginH1Top + .25em;
       }
 
       nav {
