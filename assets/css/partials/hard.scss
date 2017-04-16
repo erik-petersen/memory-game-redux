@@ -54,8 +54,6 @@
 
       .card {
         display: inline-flex;
-        // justify-content: center;
-        // align-items: center;
         width: calc( 100% / 12 * 3);
         margin: 1em 1em;
         background-color: firebrick;
@@ -82,36 +80,17 @@
       }
 
       h1 {
-        font-family: $fontHeading;
         font-size: $sizeMainFont - 3.5em;
         margin-top: $marginH1Top + .75em;
         margin-left: 5%;
       }
 
       nav {
-        font-family: $fontNav;
         font-size: $sizeNavFont - 3.25em;
         margin-top: .25em;
-
-        li {
-          display: inline-block;
-          margin: 0 .1em;
-        }
-
-        li,
-        a {
-          color: $colorMainFont;
-          padding: .25em 0;
-          cursor: pointer;
-        }
-
-        li::nth-child(2) {
-          margin-top: 1.5em;
-        }
       } // end nav
 
       main {
-        display: flex;
         justify-content: flex-end;
         align-items: flex-start;
         margin-top: 0;
@@ -122,11 +101,8 @@
         .card {
           display: inline-block;
           margin: .25em .5em;
-          background-color: firebrick;
           width: 5em;
           height: 5em;
-          cursor: pointer;
-          border-radius: 50%;
           // width: calc( 100% / 12 * 2);
         }
       } // end main

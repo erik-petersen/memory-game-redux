@@ -48,10 +48,20 @@ a {
       cursor: pointer; }
   .home-body .home-wrapper main {
     width: 90%; }
+  @media screen and (orientation: landscape) {
+    .home-body .home-wrapper {
+      min-height: calc( 100vh - 5em ); }
+      .home-body .home-wrapper h1 {
+        font-size: 4.5em;
+        margin-top: 1.5em;
+        margin-left: 4%; }
+      .home-body .home-wrapper nav {
+        width: 100%;
+        font-size: 3.25em;
+        margin-top: .25em; } }
 
 .easy-body .easy-wrapper {
   min-height: calc( 100vh - 14.5em );
-  width: 90%;
   margin: 0 auto;
   text-align: center; }
   .easy-body .easy-wrapper h1 {
@@ -92,6 +102,31 @@ a {
       font-size: 10em;
       color: #fff;
       display: none; }
+  @media screen and (orientation: landscape) {
+    .easy-body .easy-wrapper {
+      min-height: calc( 100vh - 5em ); }
+      .easy-body .easy-wrapper header {
+        float: left; }
+      .easy-body .easy-wrapper h1 {
+        font-size: 4.5em;
+        margin-top: 1.5em;
+        margin-left: 4.75%; }
+      .easy-body .easy-wrapper nav {
+        font-size: 3.25em;
+        margin-top: .25em; }
+      .easy-body .easy-wrapper main {
+        float: right;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 0;
+        margin-right: 3%; }
+        .easy-body .easy-wrapper main ul {
+          width: calc( 100% / 12 * 12); }
+        .easy-body .easy-wrapper main .card {
+          display: inline-block;
+          margin: 10em 2.5em;
+          width: 9em;
+          height: 9em; } }
 
 .hard-body {
   width: 100%;
@@ -146,26 +181,13 @@ a {
         .hard-body .hard-wrapper header {
           float: left; }
         .hard-body .hard-wrapper h1 {
-          font-family: "Barrio", sans-serif;
           font-size: 4.5em;
           margin-top: 1.5em;
           margin-left: 5%; }
         .hard-body .hard-wrapper nav {
-          font-family: "Comfortaa", sans-serif;
           font-size: 3.25em;
           margin-top: .25em; }
-          .hard-body .hard-wrapper nav li {
-            display: inline-block;
-            margin: 0 .1em; }
-          .hard-body .hard-wrapper nav li,
-          .hard-body .hard-wrapper nav a {
-            color: #333;
-            padding: .25em 0;
-            cursor: pointer; }
-          .hard-body .hard-wrapper nav li::nth-child(2) {
-            margin-top: 1.5em; }
         .hard-body .hard-wrapper main {
-          display: flex;
           justify-content: flex-end;
           align-items: flex-start;
           margin-top: 0; }
@@ -174,10 +196,7 @@ a {
           .hard-body .hard-wrapper main .card {
             display: inline-block;
             margin: .25em .5em;
-            background-color: firebrick;
             width: 5em;
-            height: 5em;
-            cursor: pointer;
-            border-radius: 50%; } }
+            height: 5em; } }
 
 /*# sourceMappingURL=styles.css.map */
