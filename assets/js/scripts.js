@@ -69,6 +69,9 @@ $(function() {
               $(cards[i]).children().hide();
               $( hearts[i] ).show();
             }
+
+            numIncorrect = 0;
+            
           }
         }
       } // end else if
