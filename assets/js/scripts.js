@@ -10,29 +10,36 @@ $(function() {
   var firstCard = "";
   var secondCard = "";
   var hearts = $( ".fa-heartbeat" );
+  var cards = $( ".card" );
 
   $( "main" ).on( "click", ".card", function() {
 
     clicks++;
-    console.log( hearts );
+    console.log( hearts[0] );
+    console.log( clicks );
 
     $( this ).children().toggle();
 
     if( clicks === 1 ) {
       firstCard = $( this );
       console.log( "1 click" );
+      console.log( firstCard.index() );
     } // end if
 
     else if( clicks === 2 ) {
 
       console.log( clicks );
-      if( $(this).index() == firstCard.index() ) {
+
+      /********** this if not needed if I get rid of separate divs for each row *********/
+      if( $(this).index() == firstCard.index() && $(this).children().attr("class") == firstCard.children().attr("class") ) {
         clicks = 0;
+        console.log( "2 clicks if" );
       }
 
       else {
         secondCard = $( this );
         clicks = 0;
+        console.log( "2 clicks else" );
 
         if( firstCard.children().attr( "class" ) == secondCard.children().attr( "class" ) ) {
 
@@ -55,10 +62,16 @@ $(function() {
 
           if( numIncorrect == 7 ) {
             alert( "Uffda!!! That did not go well!!!" );
+
+            for( var i = 0; i < cards.length; i++ ) {
+              console.log( "Hello" );
+              $(cards[i]).prop( "disabled", false );
+              $(cards[i]).children().hide();
+              $( hearts[i] ).show();
+            }
           }
         }
       } // end else if
-  }
+    }
   }); // end click on .card
-
 })
