@@ -82,4 +82,14 @@
 
   } // end .hard-wrapper
 
+  @media screen and ( orientation: landscape ) {
+    h1 {
+      color: blue;
+    }
+
+    main {
+      margin-top: 35em;
+    }
+  }
+
 } // end .hard-body

@@ -139,5 +139,10 @@ a {
         font-size: 5em;
         color: #fff;
         display: none; }
+  @media screen and (orientation: landscape) {
+    .hard-body h1 {
+      color: blue; }
+    .hard-body main {
+      margin-top: 35em; } }
 
 /*# sourceMappingURL=styles.css.map */
