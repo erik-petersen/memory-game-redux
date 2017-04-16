@@ -48,22 +48,15 @@
       align-items: center;
       margin-top: 2.75em;
 
-      .row {
-        display: flex;
+      ul {
+        width: calc( 100% / 12 * 10);
       }
 
       .card {
+        display: inline-flex;
+        // justify-content: center;
+        // align-items: center;
         width: calc( 100% / 12 * 3);
-      }
-
-      .col-3 {
-        width: calc( 100% / 12 * 3);
-      }
-
-      .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 1em 1em;
         background-color: firebrick;
         width: 9em;
@@ -80,16 +73,65 @@
 
     } // end main
 
+    @media screen and ( orientation: landscape ) {
+
+      min-height: calc( 100vh - 5em );
+
+      header {
+        float: left;
+      }
+
+      h1 {
+        font-family: $fontHeading;
+        font-size: $sizeMainFont - 3.5em;
+        margin-top: $marginH1Top + .75em;
+        margin-left: 5%;
+      }
+
+      nav {
+        font-family: $fontNav;
+        font-size: $sizeNavFont - 3.25em;
+        margin-top: .25em;
+
+        li {
+          display: inline-block;
+          margin: 0 .1em;
+        }
+
+        li,
+        a {
+          color: $colorMainFont;
+          padding: .25em 0;
+          cursor: pointer;
+        }
+
+        li::nth-child(2) {
+          margin-top: 1.5em;
+        }
+      } // end nav
+
+      main {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 0;
+
+        ul {
+          width: calc( 100% / 12 * 12);
+        }
+        .card {
+          display: inline-block;
+          margin: .25em .5em;
+          background-color: firebrick;
+          width: 5em;
+          height: 5em;
+          cursor: pointer;
+          border-radius: 50%;
+          // width: calc( 100% / 12 * 2);
+        }
+      } // end main
+    } // end orientation: landscape
+
   } // end .hard-wrapper
-
-  @media screen and ( orientation: landscape ) {
-    h1 {
-      color: blue;
-    }
-
-    main {
-      margin-top: 35em;
-    }
-  }
 
 } // end .hard-body

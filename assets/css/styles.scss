@@ -46,6 +46,21 @@ a {
   text-decoration: none;
 }
 
+@media screen and ( orientation: landscape ) {
+
+  footer {
+
+    height: 5em;
+
+    .fa-heartbeat {
+      font-size: 2.5em;
+      margin-top: .55em;
+    }
+
+  } // end footer
+
+} // end orientation: landscape
+
 @import "partials/home";
 @import "partials/easy";
 @import "partials/hard";
