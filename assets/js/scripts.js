@@ -12,9 +12,9 @@ $(function() {
   var hearts = $( ".fa-heartbeat" );
   var cards = $( ".card" );
 
-  $( "body" ).on( "orientationchange", function () {
-    console.log("The orientation of the screen is: " + screen.orientation);
-    location.reload();
+  window.addEventListener("orientationchange", function() {
+      // alert("the orientation of the device is now " + screen.orientation.angle);
+      location.reload();
   });
 
   $( "main" ).on( "click", ".card", function() {
