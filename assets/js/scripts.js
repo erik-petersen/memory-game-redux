@@ -12,6 +12,11 @@ $(function() {
   var hearts = $( ".fa-heartbeat" );
   var cards = $( ".card" );
 
+  $( "body" ).on( "orientationchange", function () {
+    console.log("The orientation of the screen is: " + screen.orientation);
+    location.reload();
+  });
+
   $( "main" ).on( "click", ".card", function() {
 
     clicks++;
@@ -71,7 +76,7 @@ $(function() {
             }
 
             numIncorrect = 0;
-            
+
           }
         }
       } // end else if
