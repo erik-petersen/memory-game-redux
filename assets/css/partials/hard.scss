@@ -79,7 +79,7 @@
     @media screen and ( orientation: portrait ) {
 
         min-height: calc( 100vh - 14.5em );
-        
+
         ul {
 
           .card {
@@ -95,7 +95,7 @@
 
     @media screen and ( orientation: landscape ) {
 
-      min-height: calc( 100vh - 4.75em );
+      min-height: calc( 100vh - 4.55em );
 
       header {
         float: left;
@@ -117,7 +117,6 @@
         align-items: flex-start;
         margin-top: 0;
         padding-top: 3.5em;
-        margin-right: .25em;
 
         ul {
           width: calc( 100% / 12 * 12);
