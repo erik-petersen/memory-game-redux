@@ -132,10 +132,13 @@ a {
         .easy-body .easy-wrapper main ul {
           width: calc( 100% / 12 * 12); }
         .easy-body .easy-wrapper main .card {
-          display: inline-block;
           margin: 10em 2.5em;
           width: 9em;
-          height: 9em; } }
+          height: 9em; }
+        .easy-body .easy-wrapper main .card-icon {
+          font-size: 6.5em;
+          color: #fff;
+          display: none; } }
 
 .hard-body {
   width: 100%;
@@ -171,19 +174,21 @@ a {
       margin-top: 2.75em; }
       .hard-body .hard-wrapper main ul {
         width: calc( 100% / 12 * 10); }
-      .hard-body .hard-wrapper main .card {
-        display: inline-flex;
-        width: calc( 100% / 12 * 3);
-        margin: 1em 1em;
-        background-color: firebrick;
-        width: 9em;
-        height: 9em;
-        cursor: pointer;
-        border-radius: 50%; }
-      .hard-body .hard-wrapper main .card-icon {
-        font-size: 5em;
-        color: #fff;
-        display: none; }
+        .hard-body .hard-wrapper main ul .card {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: calc( 100% / 12 * 3);
+          margin: 1em 1em;
+          background-color: firebrick;
+          width: 9em;
+          height: 9em;
+          cursor: pointer;
+          border-radius: 50%; }
+        .hard-body .hard-wrapper main ul .card-icon {
+          font-size: 5em;
+          color: #fff;
+          visibility: hidden; }
     @media screen and (orientation: landscape) {
       .hard-body .hard-wrapper {
         min-height: calc( 100vh - 5em ); }

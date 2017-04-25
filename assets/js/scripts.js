@@ -23,9 +23,8 @@ $(function() {
     console.log( hearts[0] );
     console.log( clicks );
 
-    $( this ).children().toggle();
-
     if( clicks === 1 ) {
+      $( this ).children().css( "visibility", "visible" );
       firstCard = $( this );
       console.log( "1 click" );
       console.log( firstCard.index() );
@@ -33,9 +32,11 @@ $(function() {
 
     else if( clicks === 2 ) {
 
+      $( this ).children().css( "visibility", "hidden" );
+
       console.log( clicks );
 
-      /********** this if not needed if I get rid of separate divs for each row *********/
+      /********** this is not needed if I get rid of separate divs for each row *********/
       if( $(this).index() == firstCard.index() && $(this).children().attr("class") == firstCard.children().attr("class") ) {
         clicks = 0;
         console.log( "2 clicks if" );

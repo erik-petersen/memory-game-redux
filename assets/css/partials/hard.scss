@@ -50,24 +50,30 @@
 
       ul {
         width: calc( 100% / 12 * 10);
+
+
+        .card {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: calc( 100% / 12 * 3);
+          margin: 1em 1em;
+          background-color: firebrick;
+          width: 9em;
+          height: 9em;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+
+        .card-icon {
+          font-size: 5em;
+          color: #fff;
+          // display: none;
+          visibility: hidden;
+        }
       }
 
-      .card {
-        display: inline-flex;
-        width: calc( 100% / 12 * 3);
-        margin: 1em 1em;
-        background-color: firebrick;
-        width: 9em;
-        height: 9em;
-        cursor: pointer;
-        border-radius: 50%;
-      }
 
-      .card-icon {
-        font-size: 5em;
-        color: #fff;
-        display: none;
-      }
 
     } // end main
 
