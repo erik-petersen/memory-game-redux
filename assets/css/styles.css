@@ -110,7 +110,7 @@ a {
     .easy-body .easy-wrapper main .card-icon {
       font-size: 10em;
       color: #fff;
-      display: none; }
+      visibility: hidden; }
   @media screen and (orientation: landscape) {
     .easy-body .easy-wrapper {
       min-height: calc( 100vh - 5em ); }
