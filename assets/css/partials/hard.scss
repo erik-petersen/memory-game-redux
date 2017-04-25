@@ -56,11 +56,11 @@
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          width: calc( 100% / 12 * 3);
-          margin: 1em 1em;
+          // width: calc( 100% / 12 * 3);
+          // margin: 1em 1em;
           background-color: firebrick;
-          width: 9em;
-          height: 9em;
+          // width: 9em;
+          // height: 9em;
           cursor: pointer;
           border-radius: 50%;
         }
@@ -76,6 +76,22 @@
 
 
     } // end main
+
+    @media screen and ( orientation: portrait ) {
+
+      ul {
+        // width: calc( 100% / 12 * 10);
+
+        .card {
+          width: calc( 100% / 12 * 3);
+          margin: 1em 1em;
+          width: 9em;
+          height: 9em;
+        }
+
+      }
+
+    } // end orientation: portrait
 
     @media screen and ( orientation: landscape ) {
 
@@ -100,16 +116,18 @@
         justify-content: flex-end;
         align-items: flex-start;
         margin-top: 0;
+        padding-top: 3.5em;
+        margin-right: .25em;
 
         ul {
           width: calc( 100% / 12 * 12);
         }
+
         .card {
-          display: inline-block;
-          margin: .25em .5em;
-          width: 5em;
-          height: 5em;
-          // width: calc( 100% / 12 * 2);
+          margin: .75em .5em;
+          width: calc( 100% / 12 * 1);
+          width: 4.25em;
+          height: 4.25em;
         }
       } // end main
     } // end orientation: landscape

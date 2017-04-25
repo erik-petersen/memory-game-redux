@@ -178,17 +178,19 @@ a {
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          width: calc( 100% / 12 * 3);
-          margin: 1em 1em;
           background-color: firebrick;
-          width: 9em;
-          height: 9em;
           cursor: pointer;
           border-radius: 50%; }
         .hard-body .hard-wrapper main ul .card-icon {
           font-size: 5em;
           color: #fff;
           visibility: hidden; }
+    @media screen and (orientation: portrait) {
+      .hard-body .hard-wrapper ul .card {
+        width: calc( 100% / 12 * 3);
+        margin: 1em 1em;
+        width: 9em;
+        height: 9em; } }
     @media screen and (orientation: landscape) {
       .hard-body .hard-wrapper {
         min-height: calc( 100vh - 5em ); }
@@ -204,13 +206,15 @@ a {
         .hard-body .hard-wrapper main {
           justify-content: flex-end;
           align-items: flex-start;
-          margin-top: 0; }
+          margin-top: 0;
+          padding-top: 3.5em;
+          margin-right: .25em; }
           .hard-body .hard-wrapper main ul {
             width: calc( 100% / 12 * 12); }
           .hard-body .hard-wrapper main .card {
-            display: inline-block;
-            margin: .25em .5em;
-            width: 5em;
-            height: 5em; } }
+            margin: .75em .5em;
+            width: calc( 100% / 12 * 1);
+            width: 4.25em;
+            height: 4.25em; } }
 
 /*# sourceMappingURL=styles.css.map */
