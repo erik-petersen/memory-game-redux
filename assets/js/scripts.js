@@ -32,7 +32,13 @@ $(function() {
 
     else if( clicks === 2 ) {
 
-      $( this ).children().css( "visibility", "hidden" );
+      if( $(this).index() == firstCard.index() ) {
+        $( this ).children().css( "visibility", "hidden" );
+      } // end if click on same card
+
+      else {
+        $( this ).children().css( "visibility", "visible" );
+      } // end if click on different card
 
       console.log( clicks );
 
@@ -62,8 +68,8 @@ $(function() {
 
         else {
           numIncorrect++;
-          firstCard.children().delay(1500).hide(1);
-          secondCard.children().delay(1500).hide(1);
+          setTimeout( function() { firstCard.children().css( "visibility", "hidden" ) }, 1000 );
+          setTimeout( function() { secondCard.children().css( "visibility", "hidden" ) }, 1000 );
           $( hearts[numIncorrect - 1] ).hide();
 
           if( numIncorrect == 7 ) {

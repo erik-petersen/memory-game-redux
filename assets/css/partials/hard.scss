@@ -5,7 +5,6 @@
 
   .hard-wrapper {
 
-    min-height: calc( 100vh - 14.5em );
     margin: 0 auto;
     text-align: center;
 
@@ -79,23 +78,24 @@
 
     @media screen and ( orientation: portrait ) {
 
-      ul {
-        // width: calc( 100% / 12 * 10);
+        min-height: calc( 100vh - 14.5em );
+        
+        ul {
 
-        .card {
-          width: calc( 100% / 12 * 3);
-          margin: 1em 1em;
-          width: 9em;
-          height: 9em;
-        }
+          .card {
+            width: calc( 100% / 12 * 3);
+            margin: 1em 1em;
+            width: 9em;
+            height: 9em;
+          }
 
-      }
+        } // end ul
 
     } // end orientation: portrait
 
     @media screen and ( orientation: landscape ) {
 
-      min-height: calc( 100vh - 5em );
+      min-height: calc( 100vh - 4.75em );
 
       header {
         float: left;

@@ -144,7 +144,6 @@ a {
   width: 100%;
   margin: auto; }
   .hard-body .hard-wrapper {
-    min-height: calc( 100vh - 14.5em );
     margin: 0 auto;
     text-align: center; }
     .hard-body .hard-wrapper h1 {
@@ -186,14 +185,16 @@ a {
           color: #fff;
           visibility: hidden; }
     @media screen and (orientation: portrait) {
-      .hard-body .hard-wrapper ul .card {
-        width: calc( 100% / 12 * 3);
-        margin: 1em 1em;
-        width: 9em;
-        height: 9em; } }
+      .hard-body .hard-wrapper {
+        min-height: calc( 100vh - 14.5em ); }
+        .hard-body .hard-wrapper ul .card {
+          width: calc( 100% / 12 * 3);
+          margin: 1em 1em;
+          width: 9em;
+          height: 9em; } }
     @media screen and (orientation: landscape) {
       .hard-body .hard-wrapper {
-        min-height: calc( 100vh - 5em ); }
+        min-height: calc( 100vh - 4.75em ); }
         .hard-body .hard-wrapper header {
           float: left; }
         .hard-body .hard-wrapper h1 {
