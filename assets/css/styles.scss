@@ -15,12 +15,7 @@ $marginNavTop: 2.5em;
   box-sizing: border-box;
 }
 
-// html {
-//   min-height: calc( 100vh - 8.5em );
-// }
-
 .fa-lightbulb-o {
-  // color: #DBDB0B;
   color: firebrick;
 }
 
@@ -53,8 +48,8 @@ a {
     height: 5em;
 
     .fa-heartbeat {
-      // text-align: right;
-      float: right;
+      text-align: right;
+      // float: right;
       font-size: 2.5em;
       margin-top: .55em;
     }
