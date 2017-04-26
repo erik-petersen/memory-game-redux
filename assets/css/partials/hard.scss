@@ -96,6 +96,7 @@
 
       header {
         float: left;
+        width: 40%;
       }
 
       h1 {
@@ -114,17 +115,17 @@
         align-items: flex-start;
         margin-top: 0;
         margin-right: .5em;
-        padding-top: 2em;
+        padding-top: 1.85em;
 
         ul {
           width: calc( 100% / 12 * 11);
-          margin-right: 1.75em;
+          margin-right: 1.5em;
 
           .card {
-            margin: .75em 0;
+            margin: .5em 0 0 .5em;
             width: calc( 100% / 12 * 1);
-            width: 4.65em;
-            height: 4.65em;
+            width: 4.75em;
+            height: 4.75em;
           }
 
           .card-icon {

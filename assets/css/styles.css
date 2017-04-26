@@ -25,11 +25,10 @@ a {
   footer {
     height: 5em; }
     footer .fa-heartbeat {
-      text-align: right;
       font-size: 2.5em;
       margin-top: .55em; } }
 .home-body .home-wrapper {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   text-align: center; }
   .home-body .home-wrapper h1 {
@@ -43,10 +42,20 @@ a {
     margin-top: 2.5em; }
     .home-body .home-wrapper nav li,
     .home-body .home-wrapper nav a {
-      color: #333;
+      color: #fff;
       margin-top: 1.5em;
       padding: .25em 0;
       cursor: pointer; }
+    .home-body .home-wrapper nav li:nth-child(odd) {
+      -webkit-transform: perspective(20em) rotateY(-25deg);
+      transform: perspective(20em) rotateY(-25deg);
+      background: #ba0000;
+      opacity: .9; }
+    .home-body .home-wrapper nav li:nth-child(even) {
+      -webkit-transform: perspective(20em) rotateY(25deg);
+      transform: perspective(20em) rotateY(25deg);
+      background: #ba0000;
+      opacity: .9; }
   .home-body .home-wrapper main {
     width: 90%; }
   @media screen and (orientation: portrait) {
@@ -54,11 +63,11 @@ a {
       min-height: calc( 100vh - 5em ); }
       .home-body .home-wrapper h1 {
         font-size: 8em;
-        margin-top: 0.75em; }
+        margin-top: 1.75em; }
       .home-body .home-wrapper nav {
         width: 100%;
         font-size: 6.5em;
-        margin-top: .25em; } }
+        margin-top: .75em; } }
   @media screen and (orientation: landscape) {
     .home-body .home-wrapper {
       min-height: calc( 100vh - 5em ); }
@@ -116,7 +125,8 @@ a {
     .easy-body .easy-wrapper {
       min-height: calc( 100vh - 4.55em ); }
       .easy-body .easy-wrapper header {
-        float: left; }
+        float: left;
+        width: 40%; }
       .easy-body .easy-wrapper h1 {
         font-size: 4.5em;
         margin-top: 1.5em;
@@ -199,7 +209,8 @@ a {
       .hard-body .hard-wrapper {
         min-height: calc( 100vh - 4.55em ); }
         .hard-body .hard-wrapper header {
-          float: left; }
+          float: left;
+          width: 40%; }
         .hard-body .hard-wrapper h1 {
           font-size: 4.5em;
           margin-top: 1.5em;
@@ -212,15 +223,15 @@ a {
           align-items: flex-start;
           margin-top: 0;
           margin-right: .5em;
-          padding-top: 2em; }
+          padding-top: 1.85em; }
           .hard-body .hard-wrapper main ul {
             width: calc( 100% / 12 * 11);
-            margin-right: 1.75em; }
+            margin-right: 1.5em; }
             .hard-body .hard-wrapper main ul .card {
-              margin: .75em 0;
+              margin: .5em 0 0 .5em;
               width: calc( 100% / 12 * 1);
-              width: 4.65em;
-              height: 4.65em; }
+              width: 4.75em;
+              height: 4.75em; }
             .hard-body .hard-wrapper main ul .card-icon {
               font-size: 3.5em; } }
 

@@ -2,7 +2,7 @@
 
   .home-wrapper {
 
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
 
@@ -20,11 +20,27 @@
 
       li,
       a {
-        color: $colorMainFont;
+        // color: $colorMainFont;
+        color: #fff;
         margin-top: 1.5em;
         padding: .25em 0;
         cursor: pointer;
       }
+
+      li:nth-child(odd) {
+  -webkit-transform: perspective(20em) rotateY(-25deg);
+          transform: perspective(20em) rotateY(-25deg);
+          background: $colorNavHover;
+          opacity: .9;
+        }
+
+        li:nth-child(even) {
+  -webkit-transform: perspective(20em) rotateY(25deg);
+          transform: perspective(20em) rotateY(25deg);
+          background: $colorNavHover;
+          opacity: .9;
+        }
+
     } // end nav
 
     main {
@@ -37,13 +53,13 @@
 
       h1 {
         font-size: $sizeMainFont;
-        margin-top: $marginH1Top;
+        margin-top: $marginH1Top + 1em;
       }
 
       nav {
         width: 100%;
         font-size: $sizeNavFont;
-        margin-top: .25em;
+        margin-top: .75em;
       } // end nav
     } // end orientation: portrait
 
