@@ -25,6 +25,7 @@ a {
   footer {
     height: 5em; }
     footer .fa-heartbeat {
+      text-align: right;
       font-size: 2.5em;
       margin-top: .55em; } }
 .home-body .home-wrapper {
@@ -113,7 +114,7 @@ a {
       visibility: hidden; }
   @media screen and (orientation: landscape) {
     .easy-body .easy-wrapper {
-      min-height: calc( 100vh - 5em ); }
+      min-height: calc( 100vh - 4.55em ); }
       .easy-body .easy-wrapper header {
         float: left; }
       .easy-body .easy-wrapper h1 {
@@ -136,9 +137,8 @@ a {
           width: 9em;
           height: 9em; }
         .easy-body .easy-wrapper main .card-icon {
-          font-size: 6.5em;
-          color: #fff;
-          display: none; } }
+          font-size: 6.25em;
+          color: #fff; } }
 
 .hard-body {
   width: 100%;
@@ -172,7 +172,7 @@ a {
       align-items: center;
       margin-top: 2.75em; }
       .hard-body .hard-wrapper main ul {
-        width: calc( 100% / 12 * 10); }
+        width: calc( 100% / 12 * 12); }
         .hard-body .hard-wrapper main ul .card {
           display: inline-flex;
           justify-content: center;
@@ -208,13 +208,16 @@ a {
           justify-content: flex-end;
           align-items: flex-start;
           margin-top: 0;
+          margin-right: .5em;
           padding-top: 3.5em; }
           .hard-body .hard-wrapper main ul {
-            width: calc( 100% / 12 * 12); }
-          .hard-body .hard-wrapper main .card {
-            margin: .75em .5em;
-            width: calc( 100% / 12 * 1);
-            width: 4.25em;
-            height: 4.25em; } }
+            width: calc( 100% / 12 * 11); }
+            .hard-body .hard-wrapper main ul .card {
+              margin: .75em 0;
+              width: calc( 100% / 12 * 1);
+              width: 4.65em;
+              height: 4.65em; }
+            .hard-body .hard-wrapper main ul .card-icon {
+              font-size: 3.5em; } }
 
 /*# sourceMappingURL=styles.css.map */

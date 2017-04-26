@@ -48,18 +48,13 @@
       margin-top: 2.75em;
 
       ul {
-        width: calc( 100% / 12 * 10);
-
+        width: calc( 100% / 12 * 12);
 
         .card {
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          // width: calc( 100% / 12 * 3);
-          // margin: 1em 1em;
           background-color: firebrick;
-          // width: 9em;
-          // height: 9em;
           cursor: pointer;
           border-radius: 50%;
         }
@@ -67,12 +62,9 @@
         .card-icon {
           font-size: 5em;
           color: #fff;
-          // display: none;
           visibility: hidden;
         }
       }
-
-
 
     } // end main
 
@@ -116,18 +108,26 @@
         justify-content: flex-end;
         align-items: flex-start;
         margin-top: 0;
+        margin-right: .5em;
         padding-top: 3.5em;
 
         ul {
-          width: calc( 100% / 12 * 12);
+          width: calc( 100% / 12 * 11);
+
+          .card {
+            margin: .75em 0;
+            width: calc( 100% / 12 * 1);
+            width: 4.65em;
+            height: 4.65em;
+          }
+
+          .card-icon {
+            font-size: 3.5em;
+          }
+
         }
 
-        .card {
-          margin: .75em .5em;
-          width: calc( 100% / 12 * 1);
-          width: 4.25em;
-          height: 4.25em;
-        }
+
       } // end main
     } // end orientation: landscape
 

@@ -68,7 +68,7 @@
 
     @media screen and ( orientation: landscape ) {
 
-      min-height: calc( 100vh - 5em );
+      min-height: calc( 100vh - 4.55em );
 
       header {
         float: left;
@@ -104,9 +104,8 @@
         }
 
         .card-icon {
-          font-size: 6.5em;
+          font-size: 6.25em;
           color: #fff;
-          display: none;
         }
       } // end main
 
