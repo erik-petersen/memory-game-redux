@@ -27,6 +27,7 @@ $(function() {
     if( clicks === 1 ) {
       $( this ).css( "transform", "rotateY( 180deg )" );
       $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
+      $( this ).css( "-webkit-transform", "translateY( 180deg )" );
       $( this ).css( "-ms-transform", "rotateY( 180deg )" );
       $( this ).css( "-moz-transform", "rotateY( 180deg )" );
       $( this ).css( "-o-transform", "rotateY( 180deg )" );
@@ -41,6 +42,7 @@ $(function() {
       if( $(this).index() == firstCard.index() ) {
         $( this ).css( "transform", "rotateY( 0deg )" );
         $( this ).css( "-webkit-transform", "rotateY( 0deg )" );
+        $( this ).css( "-webkit-transform", "translateY( 0deg )" );
         $( this ).css( "-ms-transform", "rotateY( 0deg )" );
         $( this ).css( "-moz-transform", "rotateY( 0deg )" );
         $( this ).css( "-o-transform", "rotateY( 0deg )" );
@@ -50,6 +52,7 @@ $(function() {
       else {
         $( this ).css( "transform", "rotateY( 180deg )" );
         $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
+        $( this ).css( "-webkit-transform", "translateY( 180deg )" );
         $( this ).css( "-ms-transform", "rotateY( 180deg )" );
         $( this ).css( "-moz-transform", "rotateY( 180deg )" );
         $( this ).css( "-o-transform", "rotateY( 180deg )" );

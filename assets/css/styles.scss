@@ -26,6 +26,7 @@ body {
     -webkit-transition: background 1s, transform 1s;
             transition: background 1s, transform 1s;
   -webkit-transform: rotateY( 0deg );
+  -webkit-transform: translateY( 0deg );
             -transform: rotateY( 0deg );
             -ms-transform: rotateY( 0deg );
             -moz-transform: rotateY( 0deg );
@@ -33,6 +34,7 @@ body {
 
     .card-icon {
       -webkit-transform: rotateY( 180deg );
+      -webkit-transform: translateY( 180deg );
              -transform: rotateY( 180deg );
              -ms-transform: rotateY( 180deg );
              -moz-transform: rotateY( 180deg );
