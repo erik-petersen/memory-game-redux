@@ -27,6 +27,9 @@ $(function() {
     if( clicks === 1 ) {
       $( this ).css( "transform", "rotateY( 180deg )" );
       $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
+      $( this ).css( "-ms-transform", "rotateY( 180deg )" );
+      $( this ).css( "-moz-transform", "rotateY( 180deg )" );
+      $( this ).css( "-o-transform", "rotateY( 180deg )" );
       $( this ).children().css( "visibility", "visible" );
       firstCard = $( this );
       console.log( "1 click" );
@@ -38,12 +41,18 @@ $(function() {
       if( $(this).index() == firstCard.index() ) {
         $( this ).css( "transform", "rotateY( 0deg )" );
         $( this ).css( "-webkit-transform", "rotateY( 0deg )" );
+        $( this ).css( "-ms-transform", "rotateY( 0deg )" );
+        $( this ).css( "-moz-transform", "rotateY( 0deg )" );
+        $( this ).css( "-o-transform", "rotateY( 0deg )" );
         $( this ).children().css( "visibility", "hidden" );
       } // end if click on same card
 
       else {
         $( this ).css( "transform", "rotateY( 180deg )" );
         $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
+        $( this ).css( "-ms-transform", "rotateY( 180deg )" );
+        $( this ).css( "-moz-transform", "rotateY( 180deg )" );
+        $( this ).css( "-o-transform", "rotateY( 180deg )" );
         $( this ).children().css( "visibility", "visible" );
       } // end if click on different card
 
