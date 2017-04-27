@@ -20,10 +20,13 @@ $(function() {
   $( "main" ).on( "click", ".card", function() {
 
     clicks++;
+
     console.log( hearts[0] );
     console.log( clicks );
 
     if( clicks === 1 ) {
+      $( this ).css( "transform", "rotateY( 180deg )" );
+      $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
       $( this ).children().css( "visibility", "visible" );
       firstCard = $( this );
       console.log( "1 click" );
@@ -33,10 +36,14 @@ $(function() {
     else if( clicks === 2 ) {
 
       if( $(this).index() == firstCard.index() ) {
+        $( this ).css( "transform", "rotateY( 0deg )" );
+        $( this ).css( "-webkit-transform", "rotateY( 0deg )" );
         $( this ).children().css( "visibility", "hidden" );
       } // end if click on same card
 
       else {
+        $( this ).css( "transform", "rotateY( 180deg )" );
+        $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
         $( this ).children().css( "visibility", "visible" );
       } // end if click on different card
 
@@ -57,12 +64,40 @@ $(function() {
 
           numCorrect++;
           console.log( "They match" );
+          console.log( "Number Correct" );
+          // console.log( numCorrect );
           firstCard.prop( "disabled", true );
           secondCard.prop( "disabled", true );
 
-          if( numCorrect == 12 ) {
-            alert( "Way to go!!!  You Won!!!" );
-          } // end if all are correct
+          if( $( location ).attr( "href", "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" ) ) {
+
+            if( numCorrect == 1 ) {
+              alert( "Way to go!!!  You Won!!!" );
+              numCorrect = 0;
+              for( var i = 0; i < cards.length; i++ ) {
+                console.log( "Hello" );
+                $(cards[i]).prop( "disabled", false );
+                $(cards[i]).children().hide();
+                $( hearts[i] ).show();
+              }
+            } // end if all are correct
+
+          } // end if on easy.html
+
+          else {
+
+            if( numCorrect == 12 ) {
+              alert( "Way to go!!!  You Won!!!" );
+              numCorrect = 0;
+              for( var i = 0; i < cards.length; i++ ) {
+                console.log( "Hello" );
+                $(cards[i]).prop( "disabled", false );
+                $(cards[i]).children().hide();
+                $( hearts[i] ).show();
+              }
+            } // end if all are correct
+
+          } // end if on hard.html
 
         } // end if two cards match
 

@@ -7,6 +7,14 @@
 
 body {
   background-color: #efefeb; }
+  body .card {
+    -webkit-transition: background 1s, transform 1s;
+    transition: background 1s, transform 1s;
+    -webkit-transform: rotateY(0deg);
+    -transform: rotateY(0deg); }
+    body .card .card-icon {
+      -webkit-transform: rotateY(180deg);
+      -transform: rotateY(180deg); }
 
 footer {
   background-color: grey;
