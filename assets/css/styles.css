@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Barrio|Comfortaa");
+html {
+  width: 100%; }
+
 * {
   box-sizing: border-box; }
 
@@ -25,8 +28,26 @@ body {
       -o-transform: rotateY(180deg); }
   body .modal-btn {
     display: none; }
-  body #myModal {
-    visibility: hidden; }
+  body #myModal .modal-lg {
+    margin-top: 50%; }
+    body #myModal .modal-lg .modal-content {
+      background-color: azure; }
+    body #myModal .modal-lg .modal-header {
+      text-align: center; }
+      body #myModal .modal-lg .modal-header .close {
+        font-size: .5em;
+        margin-left: -5em;
+        font-size: 3em; }
+      body #myModal .modal-lg .modal-header .modal-title {
+        font-size: 3.5em;
+        color: #333; }
+    body #myModal .modal-lg .modal-body {
+      text-align: center; }
+      body #myModal .modal-lg .modal-body p {
+        font-size: 2.5em;
+        color: #333; }
+    body #myModal .modal-lg .btn-close {
+      font-size: 2.25em; }
 
 footer {
   background-color: grey;
@@ -60,12 +81,15 @@ a {
     font-family: "Comfortaa", sans-serif;
     font-size: 6.5em;
     margin-top: 2.5em; }
+    .home-body .home-wrapper nav li {
+      margin-top: 1.5em; }
     .home-body .home-wrapper nav li,
     .home-body .home-wrapper nav a {
       color: #fff;
-      margin-top: 1.5em;
-      padding: .25em 0;
-      cursor: pointer; }
+      padding: .25em 0; }
+    .home-body .home-wrapper nav a {
+      display: inline-block;
+      padding: 0 2.2em; }
     .home-body .home-wrapper nav li:nth-child(odd) {
       -webkit-transform: perspective(20em) rotateY(-35deg);
       transform: perspective(20em) rotateY(-35deg);
@@ -220,11 +244,13 @@ a {
         .hard-body .hard-wrapper main {
           width: calc( 100% / 12 * 10 );
           margin: 2.75em auto 0; }
-        .hard-body .hard-wrapper ul .card {
-          width: calc( 100% / 12 * 3);
-          margin: 1em 1em;
-          width: 9em;
-          height: 9em; } }
+        .hard-body .hard-wrapper ul {
+          padding: 0 2em; }
+          .hard-body .hard-wrapper ul .card {
+            width: calc( 100% / 12 * 3);
+            margin: 1em 1em;
+            width: 9em;
+            height: 9em; } }
     @media screen and (orientation: landscape) {
       .hard-body .hard-wrapper {
         min-height: calc( 100vh - 4.55em ); }

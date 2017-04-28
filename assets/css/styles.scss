@@ -11,6 +11,10 @@ $sizeNavFont: 6.5em;
 $marginH1Top: .75em;
 $marginNavTop: 2.5em;
 
+html {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -45,10 +49,51 @@ body {
   .modal-btn {
     display: none;
   }
-
+  //
   #myModal {
-    visibility: hidden;
-  }
+
+    .modal-lg {
+      margin-top: 50%;
+
+      .modal-content {
+        background-color: azure;
+        // background-color: darkseagreen;
+      }
+
+      .modal-header {
+
+        .close {
+            font-size: .5em;
+            margin-left: -5em;
+            font-size: 3em;
+        }
+
+        text-align: center;
+
+        .modal-title {
+          font-size: 3.5em;
+          color: $colorMainFont;
+        }
+
+      } // end .modal-header
+
+      .modal-body {
+        text-align: center;
+
+        p {
+          font-size: 2.5em;
+          color: $colorMainFont;
+        }
+
+      } // end .modal-body
+
+      .btn-close {
+        font-size: 2.25em;
+      }
+
+    } // end .modal-lg
+
+  } // end #myModal
 
 } // end body
 

@@ -2,14 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Memory Game: Easy</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
   </head>
   <body class="easy-body">
     <div class="easy-wrapper">
@@ -23,31 +21,16 @@
           </ul>
         </nav>
       </header>
+
+
+
       <main>
         <ul>
           <li class="card"><span class="card-icon fa fa-paw fa-2x" aria-hidden="true"></span></li>
           <li class="card"><span class="card-icon fa fa-paw fa-2x" aria-hidden="true"></span></li>
         </ul>
-      </main>
 
-      <button type="button" class="modal-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">YOU WON!!!</h4>
-            </div>
-            <div class="modal-body">
-              <p>Congratulation!!!</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
 
     </div><!-- end .easy-wrapper -->
 
@@ -60,7 +43,29 @@
       <span class="card-icon fa fa-heartbeat fa-2x" aria-hidden="true"></span>
       <span class="card-icon fa fa-heartbeat fa-2x" aria-hidden="true"></span>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <button type="button" class="modal-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">YOU WON</h4>
+          </div>
+          <div class="modal-body">
+            <p>Congratulation!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-close btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
     <script src="../assets/js/scripts.js"></script>
   </body><!-- end .easy-body -->
 </html>

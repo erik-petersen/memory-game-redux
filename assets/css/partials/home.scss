@@ -18,13 +18,20 @@
       font-size: $sizeNavFont;
       margin-top: $marginNavTop;
 
+      li {
+        margin-top: 1.5em;
+      }
+
       li,
       a {
         // color: $colorMainFont;
         color: #fff;
-        margin-top: 1.5em;
         padding: .25em 0;
-        cursor: pointer;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0 2.2em
       }
 
       li:nth-child(odd) {
