@@ -63,8 +63,8 @@ $( function() {
           firstCard.prop( "disabled", true );
           secondCard.prop( "disabled", true );
 
-          if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
-          // if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
+          // if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
+          if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
 
               alert( "Way to go!!!  You Won!!!" );
 
@@ -84,8 +84,8 @@ $( function() {
 
           } // end if on easy.html
 
-          else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 12 ) {
-          // else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
+          // else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 12 ) {
+          else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
 
             if( numCorrect == 12 ) {
 
