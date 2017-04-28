@@ -63,13 +63,13 @@ a {
       padding: .25em 0;
       cursor: pointer; }
     .home-body .home-wrapper nav li:nth-child(odd) {
-      -webkit-transform: perspective(20em) rotateY(-25deg);
-      transform: perspective(20em) rotateY(-25deg);
+      -webkit-transform: perspective(20em) rotateY(-35deg);
+      transform: perspective(20em) rotateY(-35deg);
       background: #ba0000;
       opacity: .9; }
     .home-body .home-wrapper nav li:nth-child(even) {
-      -webkit-transform: perspective(20em) rotateY(25deg);
-      transform: perspective(20em) rotateY(25deg);
+      -webkit-transform: perspective(20em) rotateY(35deg);
+      transform: perspective(20em) rotateY(35deg);
       background: #ba0000;
       opacity: .9; }
   .home-body .home-wrapper main {

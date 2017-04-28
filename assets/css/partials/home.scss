@@ -28,15 +28,15 @@
       }
 
       li:nth-child(odd) {
-  -webkit-transform: perspective(20em) rotateY(-25deg);
-          transform: perspective(20em) rotateY(-25deg);
+  -webkit-transform: perspective(20em) rotateY(-35deg);
+          transform: perspective(20em) rotateY(-35deg);
           background: $colorNavHover;
           opacity: .9;
         }
 
         li:nth-child(even) {
-  -webkit-transform: perspective(20em) rotateY(25deg);
-          transform: perspective(20em) rotateY(25deg);
+  -webkit-transform: perspective(20em) rotateY(35deg);
+          transform: perspective(20em) rotateY(35deg);
           background: $colorNavHover;
           opacity: .9;
         }

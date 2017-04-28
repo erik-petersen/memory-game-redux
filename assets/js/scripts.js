@@ -1,8 +1,6 @@
-$(function() {
+$( function() {
 
   "use strict";
-
-  console.log( "Hello, World!" );
 
   var clicks = 0;
   var numCorrect = 0;
@@ -13,7 +11,7 @@ $(function() {
   var cards = $( ".card" );
 
   window.addEventListener("orientationchange", function() {
-      // alert("the orientation of the device is now " + screen.orientation.angle);
+      // alert( "the orientation of the device is now " + screen.orientation.angle );
       location.reload();
   });
 
@@ -21,25 +19,27 @@ $(function() {
 
     clicks++;
 
-    console.log( hearts[0] );
-    console.log( clicks );
+    $( this ).css( "transform", "rotateY( 180deg )" );
+    $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
+    $( this ).css( "-webkit-transform", "translateY( 180deg )" );
+    $( this ).css( "-ms-transform", "rotateY( 180deg )" );
+    $( this ).css( "-moz-transform", "rotateY( 180deg )" );
+    $( this ).css( "-o-transform", "rotateY( 180deg )" );
+    $( this ).children().css( "visibility", "visible" );
 
     if( clicks === 1 ) {
-      $( this ).css( "transform", "rotateY( 180deg )" );
-      $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
-      $( this ).css( "-webkit-transform", "translateY( 180deg )" );
-      $( this ).css( "-ms-transform", "rotateY( 180deg )" );
-      $( this ).css( "-moz-transform", "rotateY( 180deg )" );
-      $( this ).css( "-o-transform", "rotateY( 180deg )" );
-      $( this ).children().css( "visibility", "visible" );
+
       firstCard = $( this );
-      console.log( "1 click" );
-      console.log( firstCard.index() );
-    } // end if
+
+    } // end if clicks == 1
 
     else if( clicks === 2 ) {
 
-      if( $(this).index() == firstCard.index() ) {
+      secondCard = $( this );
+
+      // if the same exact card is clicked again
+      if( secondCard.index() == firstCard.index() ) {
+
         $( this ).css( "transform", "rotateY( 0deg )" );
         $( this ).css( "-webkit-transform", "rotateY( 0deg )" );
         $( this ).css( "-webkit-transform", "translateY( 0deg )" );
@@ -47,93 +47,114 @@ $(function() {
         $( this ).css( "-moz-transform", "rotateY( 0deg )" );
         $( this ).css( "-o-transform", "rotateY( 0deg )" );
         $( this ).children().css( "visibility", "hidden" );
+
+        clicks = 0;
+
       } // end if click on same card
 
+      // if a different card is clicked
       else {
-        $( this ).css( "transform", "rotateY( 180deg )" );
-        $( this ).css( "-webkit-transform", "rotateY( 180deg )" );
-        $( this ).css( "-webkit-transform", "translateY( 180deg )" );
-        $( this ).css( "-ms-transform", "rotateY( 180deg )" );
-        $( this ).css( "-moz-transform", "rotateY( 180deg )" );
-        $( this ).css( "-o-transform", "rotateY( 180deg )" );
-        $( this ).children().css( "visibility", "visible" );
-      } // end if click on different card
 
-      console.log( clicks );
-
-      /********** this is not needed if I get rid of separate divs for each row *********/
-      if( $(this).index() == firstCard.index() && $(this).children().attr("class") == firstCard.children().attr("class") ) {
-        clicks = 0;
-        console.log( "2 clicks if" );
-      }
-
-      else {
-        secondCard = $( this );
-        clicks = 0;
-        console.log( "2 clicks else" );
-
-        if( firstCard.children().attr( "class" ) == secondCard.children().attr( "class" ) ) {
+      // if second card is correct match
+      if( firstCard.children().attr( "class" ) == secondCard.children().attr( "class" ) ) {
 
           numCorrect++;
-          console.log( "They match" );
-          console.log( "Number Correct" );
-          // console.log( numCorrect );
+
           firstCard.prop( "disabled", true );
           secondCard.prop( "disabled", true );
 
-          if( $( location ).attr( "href", "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" ) ) {
+          if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
+          // if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
 
-            if( numCorrect == 1 ) {
               alert( "Way to go!!!  You Won!!!" );
+
               numCorrect = 0;
+
               for( var i = 0; i < cards.length; i++ ) {
-                console.log( "Hello" );
-                $(cards[i]).prop( "disabled", false );
-                $(cards[i]).children().hide();
+                $( cards[i] ).prop( "disabled", false );
+                $( cards[i] ).css( "transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-webkit-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-webkit-transform", "translateY( 0deg )" );
+                $( cards[i] ).css( "-ms-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-moz-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-o-transform", "rotateY( 0deg )" );
+                $( cards[i] ).children().css( "visibility", "hidden" );
                 $( hearts[i] ).show();
               }
-            } // end if all are correct
 
           } // end if on easy.html
 
-          else {
+          else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 12 ) {
+          // else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
 
             if( numCorrect == 12 ) {
+
               alert( "Way to go!!!  You Won!!!" );
+
               numCorrect = 0;
+
               for( var i = 0; i < cards.length; i++ ) {
-                console.log( "Hello" );
-                $(cards[i]).prop( "disabled", false );
-                $(cards[i]).children().hide();
+                $( cards[i] ).prop( "disabled", false );
+                $( cards[i] ).css( "transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-webkit-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-webkit-transform", "translateY( 0deg )" );
+                $( cards[i] ).css( "-ms-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-moz-transform", "rotateY( 0deg )" );
+                $( cards[i] ).css( "-o-transform", "rotateY( 0deg )" );
+                $( cards[i] ).children().css( "visibility", "hidden" );
                 $( hearts[i] ).show();
               }
+
             } // end if all are correct
 
           } // end if on hard.html
 
         } // end if two cards match
 
+        // if second card is not correct match
         else {
           numIncorrect++;
+
           setTimeout( function() { firstCard.children().css( "visibility", "hidden" ) }, 1000 );
           setTimeout( function() { secondCard.children().css( "visibility", "hidden" ) }, 1000 );
+
+          setTimeout( function() { firstCard.css( "transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { firstCard.css( "-webkit-transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { firstCard.css( "-webkit-transform", "translateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { firstCard.css( "-ms-transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { firstCard.css( "-o-transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { secondCard.css( "transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { secondCard.css( "-webkit-transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { secondCard.css( "-webkit-transform", "translateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { secondCard.css( "-moz-transform", "rotateY( 0deg )" ) }, 1000 );
+          setTimeout( function() { secondCard.css( "-o-transform", "rotateY( 0deg )" ) }, 1000 );
+
           $( hearts[numIncorrect - 1] ).hide();
 
           if( numIncorrect == 7 ) {
             alert( "Uffda!!! That did not go well!!!" );
 
             for( var i = 0; i < cards.length; i++ ) {
-              console.log( "Hello" );
-              $(cards[i]).prop( "disabled", false );
-              $(cards[i]).children().hide();
+              $( cards[i] ).prop( "disabled", false );
+              $( cards[i] ).css( "transform", "rotateY( 0deg )" );
+              $( cards[i] ).css( "-webkit-transform", "rotateY( 0deg )" );
+              $( cards[i] ).css( "-webkit-transform", "translateY( 0deg )" );
+              $( cards[i] ).css( "-ms-transform", "rotateY( 0deg )" );
+              $( cards[i] ).css( "-moz-transform", "rotateY( 0deg )" );
+              $( cards[i] ).css( "-o-transform", "rotateY( 0deg )" );
+              $( cards[i] ).children().css( "visibility", "hidden" );
               $( hearts[i] ).show();
             }
 
             numIncorrect = 0;
+            numCorrect = 0;
 
           }
         }
-      } // end else if
-    }
+
+      clicks = 0;
+
+      } // end if click on different card
+    } // end if clicks == 2
   }); // end click on .card
 })
