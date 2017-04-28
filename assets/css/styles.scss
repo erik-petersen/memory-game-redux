@@ -49,51 +49,104 @@ body {
   .modal-btn {
     display: none;
   }
-  //
-  #myModal {
 
-    .modal-lg {
-      margin-top: 50%;
+  @media screen and ( orientation: portrait ) {
 
-      .modal-content {
-        background-color: azure;
-        // background-color: darkseagreen;
-      }
+    #myModal {
 
-      .modal-header {
+      .modal-lg {
+        margin-top: 50%;
 
-        .close {
-            font-size: .5em;
-            margin-left: -5em;
-            font-size: 3em;
+        .modal-content {
+          background-color: azure;
+          // background-color: darkseagreen;
         }
 
-        text-align: center;
+        .modal-header {
 
-        .modal-title {
-          font-size: 3.5em;
-          color: $colorMainFont;
+          .close {
+              font-size: .5em;
+              margin-left: -5em;
+              font-size: 3em;
+          }
+
+          text-align: center;
+
+          .modal-title {
+            font-size: 3.5em;
+            color: $colorMainFont;
+          }
+
+        } // end .modal-header
+
+        .modal-body {
+          text-align: center;
+
+          p {
+            font-size: 2.5em;
+            color: $colorMainFont;
+          }
+
+        } // end .modal-body
+
+        .btn-close {
+          font-size: 2.25em;
         }
 
-      } // end .modal-header
+      } // end .modal-lg
 
-      .modal-body {
-        text-align: center;
+    } // end #myModal
 
-        p {
-          font-size: 2.5em;
-          color: $colorMainFont;
+  } // end portrait orientation
+
+  @media screen and ( orientation: landscape ) {
+
+    #myModal {
+
+      .modal-lg {
+        margin-top: 8%;
+
+        .modal-content {
+          background-color: azure;
+          // background-color: darkseagreen;
         }
 
-      } // end .modal-body
+        .modal-header {
 
-      .btn-close {
-        font-size: 2.25em;
-      }
+          .close {
+              font-size: .5em;
+              margin-left: -5em;
+              font-size: 3em;
+          }
 
-    } // end .modal-lg
+          text-align: center;
 
-  } // end #myModal
+          .modal-title {
+            font-size: 3.5em;
+            color: $colorMainFont;
+          }
+
+        } // end .modal-header
+
+        .modal-body {
+          text-align: center;
+
+          p {
+            font-size: 2.5em;
+            color: $colorMainFont;
+          }
+
+        } // end .modal-body
+
+        .btn-close {
+          font-size: 2.25em;
+        }
+
+      } // end .modal-lg
+
+    } // end #myModal
+
+  } // end landscape orientation
 
 } // end body
 

@@ -28,26 +28,48 @@ body {
       -o-transform: rotateY(180deg); }
   body .modal-btn {
     display: none; }
-  body #myModal .modal-lg {
-    margin-top: 50%; }
-    body #myModal .modal-lg .modal-content {
-      background-color: azure; }
-    body #myModal .modal-lg .modal-header {
-      text-align: center; }
-      body #myModal .modal-lg .modal-header .close {
-        font-size: .5em;
-        margin-left: -5em;
-        font-size: 3em; }
-      body #myModal .modal-lg .modal-header .modal-title {
-        font-size: 3.5em;
-        color: #333; }
-    body #myModal .modal-lg .modal-body {
-      text-align: center; }
-      body #myModal .modal-lg .modal-body p {
-        font-size: 2.5em;
-        color: #333; }
-    body #myModal .modal-lg .btn-close {
-      font-size: 2.25em; }
+  @media screen and (orientation: portrait) {
+    body #myModal .modal-lg {
+      margin-top: 50%; }
+      body #myModal .modal-lg .modal-content {
+        background-color: azure; }
+      body #myModal .modal-lg .modal-header {
+        text-align: center; }
+        body #myModal .modal-lg .modal-header .close {
+          font-size: .5em;
+          margin-left: -5em;
+          font-size: 3em; }
+        body #myModal .modal-lg .modal-header .modal-title {
+          font-size: 3.5em;
+          color: #333; }
+      body #myModal .modal-lg .modal-body {
+        text-align: center; }
+        body #myModal .modal-lg .modal-body p {
+          font-size: 2.5em;
+          color: #333; }
+      body #myModal .modal-lg .btn-close {
+        font-size: 2.25em; } }
+  @media screen and (orientation: landscape) {
+    body #myModal .modal-lg {
+      margin-top: 8%; }
+      body #myModal .modal-lg .modal-content {
+        background-color: azure; }
+      body #myModal .modal-lg .modal-header {
+        text-align: center; }
+        body #myModal .modal-lg .modal-header .close {
+          font-size: .5em;
+          margin-left: -5em;
+          font-size: 3em; }
+        body #myModal .modal-lg .modal-header .modal-title {
+          font-size: 3.5em;
+          color: #333; }
+      body #myModal .modal-lg .modal-body {
+        text-align: center; }
+        body #myModal .modal-lg .modal-body p {
+          font-size: 2.5em;
+          color: #333; }
+      body #myModal .modal-lg .btn-close {
+        font-size: 2.25em; } }
 
 footer {
   background-color: grey;
