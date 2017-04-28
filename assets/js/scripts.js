@@ -15,6 +15,8 @@ $( function() {
       location.reload();
   });
 
+  $( document ).scrollTop( 0 );
+
   $( "main" ).on( "click", ".card", function() {
 
     clicks++;
