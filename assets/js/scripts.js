@@ -68,7 +68,8 @@ $( function() {
           // if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
           if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
 
-              alert( "Way to go!!!  You Won!!!" );
+                $( ".modal-btn" ).trigger( "click" );
+                $( "#myModal" ).css( "visibility", "visible" );
 
               numCorrect = 0;
 

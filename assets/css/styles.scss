@@ -41,6 +41,15 @@ body {
              -o-transform: rotateY( 180deg );
     }
   } // end .card
+
+  .modal-btn {
+    display: none;
+  }
+
+  #myModal {
+    visibility: hidden;
+  }
+
 } // end body
 
 footer {

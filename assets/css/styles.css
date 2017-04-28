@@ -23,6 +23,10 @@ body {
       -ms-transform: rotateY(180deg);
       -moz-transform: rotateY(180deg);
       -o-transform: rotateY(180deg); }
+  body .modal-btn {
+    display: none; }
+  body #myModal {
+    visibility: hidden; }
 
 footer {
   background-color: grey;
