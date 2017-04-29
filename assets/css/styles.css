@@ -38,14 +38,15 @@ body {
       margin-top: 50%; }
       body #myModal .modal-lg .modal-content,
       body #myLosingModal .modal-lg .modal-content {
-        background-color: azure; }
+        background-color: darkseagreen;
+        border-radius: 1.5em; }
       body #myModal .modal-lg .modal-header,
       body #myLosingModal .modal-lg .modal-header {
         text-align: center; }
         body #myModal .modal-lg .modal-header .close,
         body #myLosingModal .modal-lg .modal-header .close {
           margin-left: -5em;
-          font-size: 4em; }
+          font-size: 4.5em; }
         body #myModal .modal-lg .modal-header .modal-title,
         body #myLosingModal .modal-lg .modal-header .modal-title {
           font-size: 5em;
@@ -59,14 +60,15 @@ body {
           color: #333; }
       body #myModal .modal-lg .btn-close,
       body #myLosingModal .modal-lg .btn-close {
-        font-size: 3em; } }
+        font-size: 3.5em; } }
   @media screen and (orientation: landscape) {
     body #myModal .modal-lg,
     body #myLosingModal .modal-lg {
       margin-top: 8%; }
       body #myModal .modal-lg .modal-content,
       body #myLosingModal .modal-lg .modal-content {
-        background-color: azure; }
+        background-color: darkseagreen;
+        border-radius: 1.5em; }
       body #myModal .modal-lg .modal-header,
       body #myLosingModal .modal-lg .modal-header {
         text-align: center; }
@@ -84,7 +86,7 @@ body {
         text-align: center; }
         body #myModal .modal-lg .modal-body p,
         body #myLosingModal .modal-lg .modal-body p {
-          font-size: 2.5em;
+          font-size: 3.85em;
           color: #333; }
       body #myModal .modal-lg .btn-close,
       body #myLosingModal .modal-lg .btn-close {
@@ -293,8 +295,8 @@ a {
           .hard-body .hard-wrapper ul .card {
             width: calc( 100% / 12 * 3);
             margin: 1em 1em;
-            width: 9em;
-            height: 9em; } }
+            width: 10em;
+            height: 10em; } }
     @media screen and (orientation: landscape) {
       .hard-body .hard-wrapper {
         min-height: calc( 100vh - 4.55em ); }
@@ -323,6 +325,6 @@ a {
               width: 5.25em;
               height: 5.25em; }
             .hard-body .hard-wrapper main ul .card-icon {
-              font-size: 3.5em; } }
+              font-size: 3.25em; } }
 
 /*# sourceMappingURL=styles.css.map */

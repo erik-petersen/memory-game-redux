@@ -68,10 +68,9 @@ $( function() {
           // if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
           if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
 
-                $( ".modal-btn" ).trigger( "click" );
-                $( "#myModal" ).css( "visibility", "visible" );
-                // $( ".modal" ).css( "visibility", "visible" );
-              console.log( numCorrect );
+              $( ".winning-modal-btn" ).trigger( "click" );
+              $( "#myModal" ).css( "visibility", "visible" );
+
               numCorrect = 0;
 
               for( var i = 0; i < cards.length; i++ ) {
@@ -91,12 +90,9 @@ $( function() {
           // else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 2 ) {
           else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
 
-            if( numCorrect == 12 ) {
-
-              $( ".modal-btn" ).trigger( "click" );
+              $( ".winning-modal-btn" ).trigger( "click" );
               $( "#myModal" ).css( "visibility", "visible" );
 
-              console.log( numCorrect );
               numCorrect = 0;
 
               for( var i = 0; i < cards.length; i++ ) {
@@ -110,8 +106,6 @@ $( function() {
                 $( cards[i] ).children().css( "visibility", "hidden" );
                 $( hearts[i] ).show();
               }
-
-            } // end if all are correct
 
           } // end if on hard.html
 
