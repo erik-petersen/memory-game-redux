@@ -112,28 +112,28 @@
 
     } // end orientation: landscape
 
-    @media screen and ( min-width: 900px ) {
-
-      header {
-        width: 48%;
-      }
-
-      h1 {
-        font-size: 7.25em;
-      }
-
-      nav {
-        font-size: 4.25em;
-        margin: 1em auto;
-
-      } // end nav
-
-      main {
-        width: 42%;
-        margin-top: 15%;
-      }
-
-    } // end media query min-width: 920px
+    // @media screen and ( min-width: 900px ) {
+    //
+    //   header {
+    //     width: 48%;
+    //   }
+    //
+    //   h1 {
+    //     font-size: 7.25em;
+    //   }
+    //
+    //   nav {
+    //     font-size: 4.25em;
+    //     margin: 1em auto;
+    //
+    //   } // end nav
+    //
+    //   main {
+    //     width: 42%;
+    //     margin-top: 15%;
+    //   }
+    //
+    // } // end media query min-width: 920px
 
   } // end .easy-wrapper
 

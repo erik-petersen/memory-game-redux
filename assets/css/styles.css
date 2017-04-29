@@ -248,17 +248,6 @@ a {
         .easy-body .easy-wrapper main .card-icon {
           font-size: 6.25em;
           color: #fff; } }
-  @media screen and (min-width: 900px) {
-    .easy-body .easy-wrapper header {
-      width: 48%; }
-    .easy-body .easy-wrapper h1 {
-      font-size: 7.25em; }
-    .easy-body .easy-wrapper nav {
-      font-size: 4.25em;
-      margin: 1em auto; }
-    .easy-body .easy-wrapper main {
-      width: 42%;
-      margin-top: 15%; } }
 
 .hard-body {
   width: 100%;
