@@ -71,6 +71,7 @@
       <span class="card-icon fa fa-heartbeat fa-2x" aria-hidden="true"></span>
     </footer>
 
+    <!-- WINNING MODAL -->
     <button type="button" class="modal-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -78,10 +79,30 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">YOU WON</h4>
+            <h4 class="modal-title">You Won</h4>
           </div>
           <div class="modal-body">
-            <p>Congratulation!  You rock!!!</p>
+            <p>Congratulations!  You rock!!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-close btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOSING MODAL -->
+    <button type="button" class="modal-btn btn btn-info btn-lg losing-modal-btn" data-toggle="modal" data-target="#myLosingModal">Open Small Modal</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myLosingModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">You Lost</h4>
+          </div>
+          <div class="modal-body">
+            <p>Better Luch Next Time</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn-close btn btn-default" data-dismiss="modal">Close</button>

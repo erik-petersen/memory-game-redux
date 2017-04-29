@@ -83,6 +83,11 @@
         width: 100%;
         font-size: $sizeNavFont - 3.25em;
         margin-top: .25em;
+
+        a {
+          display: inline-block;
+          padding: 0 5.5em
+        }
       } // end nav
 
     } // end orientation: landscape

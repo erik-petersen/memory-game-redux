@@ -19,6 +19,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .fa-lightbulb-o {
   color: firebrick;
 }
@@ -46,13 +50,15 @@ body {
     }
   } // end .card
 
-  .modal-btn {
+  .modal-btn,
+  .losing-modal-btn {
     display: none;
   }
 
   @media screen and ( orientation: portrait ) {
 
-    #myModal {
+    #myModal,
+    #myLosingModal {
 
       .modal-lg {
         margin-top: 50%;
@@ -65,15 +71,14 @@ body {
         .modal-header {
 
           .close {
-              font-size: .5em;
               margin-left: -5em;
-              font-size: 3em;
+              font-size: 4em;
           }
 
           text-align: center;
 
           .modal-title {
-            font-size: 3.5em;
+            font-size: 5em;
             color: $colorMainFont;
           }
 
@@ -83,14 +88,14 @@ body {
           text-align: center;
 
           p {
-            font-size: 2.5em;
+            font-size: 4em;
             color: $colorMainFont;
           }
 
         } // end .modal-body
 
         .btn-close {
-          font-size: 2.25em;
+          font-size: 3em;
         }
 
       } // end .modal-lg
@@ -101,7 +106,8 @@ body {
 
   @media screen and ( orientation: landscape ) {
 
-    #myModal {
+    #myModal,
+    #myLosingModal {
 
       .modal-lg {
         margin-top: 8%;

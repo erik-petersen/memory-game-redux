@@ -5,6 +5,9 @@ html {
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none !important; }
+
 .fa-lightbulb-o {
   color: firebrick; }
 
@@ -26,49 +29,65 @@ body {
       -ms-transform: rotateY(180deg);
       -moz-transform: rotateY(180deg);
       -o-transform: rotateY(180deg); }
-  body .modal-btn {
+  body .modal-btn,
+  body .losing-modal-btn {
     display: none; }
   @media screen and (orientation: portrait) {
-    body #myModal .modal-lg {
+    body #myModal .modal-lg,
+    body #myLosingModal .modal-lg {
       margin-top: 50%; }
-      body #myModal .modal-lg .modal-content {
+      body #myModal .modal-lg .modal-content,
+      body #myLosingModal .modal-lg .modal-content {
         background-color: azure; }
-      body #myModal .modal-lg .modal-header {
+      body #myModal .modal-lg .modal-header,
+      body #myLosingModal .modal-lg .modal-header {
         text-align: center; }
-        body #myModal .modal-lg .modal-header .close {
-          font-size: .5em;
+        body #myModal .modal-lg .modal-header .close,
+        body #myLosingModal .modal-lg .modal-header .close {
           margin-left: -5em;
-          font-size: 3em; }
-        body #myModal .modal-lg .modal-header .modal-title {
-          font-size: 3.5em;
+          font-size: 4em; }
+        body #myModal .modal-lg .modal-header .modal-title,
+        body #myLosingModal .modal-lg .modal-header .modal-title {
+          font-size: 5em;
           color: #333; }
-      body #myModal .modal-lg .modal-body {
+      body #myModal .modal-lg .modal-body,
+      body #myLosingModal .modal-lg .modal-body {
         text-align: center; }
-        body #myModal .modal-lg .modal-body p {
-          font-size: 2.5em;
+        body #myModal .modal-lg .modal-body p,
+        body #myLosingModal .modal-lg .modal-body p {
+          font-size: 4em;
           color: #333; }
-      body #myModal .modal-lg .btn-close {
-        font-size: 2.25em; } }
+      body #myModal .modal-lg .btn-close,
+      body #myLosingModal .modal-lg .btn-close {
+        font-size: 3em; } }
   @media screen and (orientation: landscape) {
-    body #myModal .modal-lg {
+    body #myModal .modal-lg,
+    body #myLosingModal .modal-lg {
       margin-top: 8%; }
-      body #myModal .modal-lg .modal-content {
+      body #myModal .modal-lg .modal-content,
+      body #myLosingModal .modal-lg .modal-content {
         background-color: azure; }
-      body #myModal .modal-lg .modal-header {
+      body #myModal .modal-lg .modal-header,
+      body #myLosingModal .modal-lg .modal-header {
         text-align: center; }
-        body #myModal .modal-lg .modal-header .close {
+        body #myModal .modal-lg .modal-header .close,
+        body #myLosingModal .modal-lg .modal-header .close {
           font-size: .5em;
           margin-left: -5em;
           font-size: 3em; }
-        body #myModal .modal-lg .modal-header .modal-title {
+        body #myModal .modal-lg .modal-header .modal-title,
+        body #myLosingModal .modal-lg .modal-header .modal-title {
           font-size: 3.5em;
           color: #333; }
-      body #myModal .modal-lg .modal-body {
+      body #myModal .modal-lg .modal-body,
+      body #myLosingModal .modal-lg .modal-body {
         text-align: center; }
-        body #myModal .modal-lg .modal-body p {
+        body #myModal .modal-lg .modal-body p,
+        body #myLosingModal .modal-lg .modal-body p {
           font-size: 2.5em;
           color: #333; }
-      body #myModal .modal-lg .btn-close {
+      body #myModal .modal-lg .btn-close,
+      body #myLosingModal .modal-lg .btn-close {
         font-size: 2.25em; } }
 
 footer {
@@ -143,7 +162,10 @@ a {
       .home-body .home-wrapper nav {
         width: 100%;
         font-size: 3.25em;
-        margin-top: .25em; } }
+        margin-top: .25em; }
+        .home-body .home-wrapper nav a {
+          display: inline-block;
+          padding: 0 5.5em; } }
 
 .easy-body .easy-wrapper {
   min-height: calc( 100vh - 14.5em );
@@ -291,15 +313,15 @@ a {
           align-items: flex-start;
           margin-top: 0;
           margin-right: .5em;
-          padding-top: 3em; }
+          padding-top: 3.75em; }
           .hard-body .hard-wrapper main ul {
             width: calc( 100% / 12 * 11);
             margin-right: 1.5em; }
             .hard-body .hard-wrapper main ul .card {
-              margin: .5em 0 0 .5em;
+              margin: .75em 0 0 .75em;
               width: calc( 100% / 12 * 1);
-              width: 4.75em;
-              height: 4.75em; }
+              width: 5.25em;
+              height: 5.25em; }
             .hard-body .hard-wrapper main ul .card-icon {
               font-size: 3.5em; } }
 
