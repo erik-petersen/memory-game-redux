@@ -65,8 +65,8 @@ $( function() {
           firstCard.prop( "disabled", true );
           secondCard.prop( "disabled", true );
 
-          if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
-          // if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
+          // if( $( location ).attr( "href" ) == "http://localhost:3000/pages/easy.html" && numCorrect == 1 ) {
+          if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/easy.html" && numCorrect == 1 ) {
 
                 $( ".modal-btn" ).trigger( "click" );
                 $( "#myModal" ).css( "visibility", "visible" );
@@ -88,8 +88,8 @@ $( function() {
 
           } // end if on easy.html
 
-          else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 2 ) {
-          // else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
+          // else if( $( location ).attr( "href" ) == "http://localhost:3000/pages/hard.html" && numCorrect == 2 ) {
+          else if( $( location ).attr( "href" ) == "https://erik-petersen.github.io/memory-game-redux/pages/hard.html" && numCorrect == 12 ) {
 
             if( numCorrect == 12 ) {
 
@@ -137,7 +137,7 @@ $( function() {
 
           $( hearts[numIncorrect - 1] ).hide();
 
-          if( numIncorrect == 2 ) {
+          if( numIncorrect == 7 ) {
 
             $( ".losing-modal-btn" ).trigger( "click" );
             $( "#myLosingModal" ).css( "visibility", "visible" );
