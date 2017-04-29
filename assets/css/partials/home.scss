@@ -156,6 +156,29 @@
         }
       } // end nav
 
+      @media screen and ( min-width: 550px ) {
+
+        h1 {
+          font-size: $sizeMainFont - 4em;
+          margin-top: 5%;
+        }
+
+        nav {
+          width: 75%;
+          margin: 1em auto;
+          font-size: 2em;
+
+          li {
+
+            a {
+              padding: 0 4.25em;
+            }
+
+          }
+        } // end nav
+
+      } // end portrait min-width 550px
+
       @media screen and ( min-width: 740px ) {
 
         h1 {

@@ -197,6 +197,16 @@ a {
       .home-body .home-wrapper nav a {
         display: inline-block;
         padding: 0 5.5em; } }
+@media screen and (orientation: landscape) and (min-width: 550px) {
+  .home-body .home-wrapper h1 {
+    font-size: 4em;
+    margin-top: 5%; }
+  .home-body .home-wrapper nav {
+    width: 75%;
+    margin: 1em auto;
+    font-size: 2em; }
+    .home-body .home-wrapper nav li a {
+      padding: 0 4.25em; } }
 @media screen and (orientation: landscape) and (min-width: 740px) {
   .home-body .home-wrapper h1 {
     font-size: 8em;
