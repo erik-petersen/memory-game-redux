@@ -92,6 +92,26 @@
 
     } // end orientation: landscape
 
+    @media screen and ( min-width: 900px ) {
+
+      h1 {
+        font-size: $sizeMainFont - .5em;
+        margin-top: $marginH1Top - .25em;
+      }
+
+      nav {
+        width: 75%;
+        // font-size: $sizeNavFont - 3.25em;
+        margin: 3em auto;
+
+        a {
+          // display: inline-block;
+          padding: 0 4em
+        }
+      } // end nav
+
+    } // end media query min-width: 920px
+
   } // end .home-wrapper
 
 } // end .home-body
