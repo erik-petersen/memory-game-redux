@@ -181,9 +181,11 @@
 
       @media screen and ( min-width: 740px ) {
 
+        width: 55%;
+
         h1 {
           font-size: $sizeMainFont;
-          margin-top: 10%;
+          margin-top: 7%;
         }
 
         nav {
@@ -192,6 +194,33 @@
           font-size: 5em;
 
           li {
+            margin-top: 1em;
+
+            a {
+              padding: 0 2em;
+            }
+
+          }
+        } // end nav
+
+      } // end portrait min-width 740px
+
+      @media screen and ( min-width: 1350px ) {
+
+        width: 55%;
+
+        h1 {
+          font-size: $sizeMainFont;
+          margin-top: 20%;
+        }
+
+        nav {
+          width: 75%;
+          margin: 1em auto;
+          font-size: 5em;
+
+          li {
+            margin-top: 1.5em;
 
             a {
               padding: 0 2em;

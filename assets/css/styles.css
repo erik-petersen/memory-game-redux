@@ -208,15 +208,33 @@ a {
     .home-body .home-wrapper nav li a {
       padding: 0 4.25em; } }
 @media screen and (orientation: landscape) and (min-width: 740px) {
-  .home-body .home-wrapper h1 {
-    font-size: 8em;
-    margin-top: 10%; }
-  .home-body .home-wrapper nav {
-    width: 75%;
-    margin: 1em auto;
-    font-size: 5em; }
-    .home-body .home-wrapper nav li a {
-      padding: 0 2em; } }
+  .home-body .home-wrapper {
+    width: 55%; }
+    .home-body .home-wrapper h1 {
+      font-size: 8em;
+      margin-top: 7%; }
+    .home-body .home-wrapper nav {
+      width: 75%;
+      margin: 1em auto;
+      font-size: 5em; }
+      .home-body .home-wrapper nav li {
+        margin-top: 1em; }
+        .home-body .home-wrapper nav li a {
+          padding: 0 2em; } }
+@media screen and (orientation: landscape) and (min-width: 1350px) {
+  .home-body .home-wrapper {
+    width: 55%; }
+    .home-body .home-wrapper h1 {
+      font-size: 8em;
+      margin-top: 20%; }
+    .home-body .home-wrapper nav {
+      width: 75%;
+      margin: 1em auto;
+      font-size: 5em; }
+      .home-body .home-wrapper nav li {
+        margin-top: 1.5em; }
+        .home-body .home-wrapper nav li a {
+          padding: 0 2em; } }
 
 .easy-body .easy-wrapper {
   min-height: calc( 100vh - 14.5em );
