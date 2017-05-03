@@ -125,14 +125,14 @@ a {
     font-size: 6.5em;
     margin-top: 2.5em; }
     .home-body .home-wrapper nav li {
-      margin-top: 1.5em; }
+      margin-top: 1.5em;
+      padding: .25em 0; }
     .home-body .home-wrapper nav li,
     .home-body .home-wrapper nav a {
-      color: #fff;
-      padding: .25em 0; }
+      color: #fff; }
     .home-body .home-wrapper nav a {
       display: inline-block;
-      padding: 0 2.2em; }
+      padding: 0 auto; }
     .home-body .home-wrapper nav li:nth-child(odd) {
       -webkit-transform: perspective(20em) rotateY(-35deg);
       transform: perspective(20em) rotateY(-35deg);
@@ -153,7 +153,7 @@ a {
       width: 100%;
       font-size: 6.5em;
       margin-top: .75em; } }
-@media screen and (orientation: portrait) and (min-width: 250px) {
+@media screen and (orientation: portrait) and (min-width: 200px) {
   .home-body .home-wrapper h1 {
     font-size: 3.5em;
     margin-top: 30%; }
@@ -164,7 +164,8 @@ a {
     .home-body .home-wrapper nav li {
       font-size: -11.75em; }
       .home-body .home-wrapper nav li a {
-        padding: 0 1em; } }
+        width: 4.5em;
+        padding: 0 auto; } }
 @media screen and (orientation: portrait) and (min-width: 450px) {
   .home-body .home-wrapper h1 {
     font-size: 5em;
@@ -174,8 +175,9 @@ a {
     margin: 2.5em auto;
     font-size: 3.5em; }
     .home-body .home-wrapper nav li a {
-      padding: 0 2em; } }
-@media screen and (orientation: portrait) and (min-width: 800px) {
+      width: 4.5em;
+      padding: 0 auto; } }
+@media screen and (orientation: portrait) and (min-width: 830px) {
   .home-body .home-wrapper h1 {
     font-size: 29em;
     margin-top: 33%; }
@@ -184,7 +186,7 @@ a {
     margin: 2.5em auto;
     font-size: 32.5em; }
     .home-body .home-wrapper nav li a {
-      padding: 0 2em; } }
+      padding: 0 auto; } }
 
   @media screen and (orientation: landscape) {
     .home-body .home-wrapper h1 {
@@ -196,7 +198,7 @@ a {
       margin-top: .25em; }
       .home-body .home-wrapper nav a {
         display: inline-block;
-        padding: 0 5.5em; } }
+        padding: 0 auto; } }
 @media screen and (orientation: landscape) and (min-width: 550px) {
   .home-body .home-wrapper h1 {
     font-size: 4em;
@@ -206,8 +208,8 @@ a {
     margin: 1em auto;
     font-size: 2em; }
     .home-body .home-wrapper nav li a {
-      padding: 0 4.25em; } }
-@media screen and (orientation: landscape) and (min-width: 740px) {
+      padding: 0 auto; } }
+@media screen and (orientation: landscape) and (min-width: 700px) {
   .home-body .home-wrapper {
     width: 55%; }
     .home-body .home-wrapper h1 {
@@ -220,7 +222,7 @@ a {
       .home-body .home-wrapper nav li {
         margin-top: 1em; }
         .home-body .home-wrapper nav li a {
-          padding: 0 2em; } }
+          padding: 0 auto; } }
 @media screen and (orientation: landscape) and (min-width: 1350px) {
   .home-body .home-wrapper {
     width: 55%; }
@@ -234,7 +236,7 @@ a {
       .home-body .home-wrapper nav li {
         margin-top: 1.5em; }
         .home-body .home-wrapper nav li a {
-          padding: 0 2em; } }
+          padding: 0 auto; } }
 
 .easy-body .easy-wrapper {
   min-height: calc( 100vh - 14.5em );
