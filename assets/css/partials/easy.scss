@@ -2,13 +2,16 @@
 
   .easy-wrapper {
 
-    min-height: calc( 100vh - 14.5em );
+/****************************************************************
+GLOBAL PROPERTIES
+****************************************************************/
+
     margin: 0 auto;
     text-align: center;
 
     h1 {
       font-family: $fontHeading;
-      font-size: $sizeMainFont;
+      font-size: $sizeMainFont - 4em;
       margin-top: $marginH1Top;
     }
 
@@ -18,7 +21,7 @@
 
     nav {
       font-family: $fontNav;
-      font-size: $sizeNavFont - .25em;
+      font-size: $sizeNavFont - 3.75em;
       margin-top: .15em;
 
       li {
@@ -40,100 +43,181 @@
 
     main {
 
-      margin-top: 18em;
+      margin-top: 2em;
 
       ul {
         display: inline-flex;
       }
 
       .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 3.25em;
-        background-color: firebrick;
-        width: 18em;
-        height: 18em;
-        cursor: pointer;
-        border-radius: 50%;
+        margin: 0 1.25em;
+        width: 5em;
+        height: 5em;
       }
 
       .card-icon {
-        font-size: 10em;
-        color: #fff;
-        visibility: hidden;
+        font-size: 3.75em;
       }
 
     } // end main
 
-    @media screen and ( orientation: landscape ) {
+/****************************************************************
+PORTRAIT MEDIA QUERIES
+****************************************************************/
 
-      min-height: calc( 100vh - 4.55em );
+    @media screen and ( orientation: portrait ) {
 
-      header {
-        float: left;
-        width: 40%;
+      @media screen and ( min-width: 250px ) {
+        height: calc( 100vh - 6.5em );
       }
 
-      h1 {
-        font-size: $sizeMainFont - 3.5em;
-        margin-top: $marginH1Top + .75em;
-        margin-left: 4.75%;
-      }
+      @media screen and ( min-width: 450px ) {
 
-      nav {
-        font-size: $sizeNavFont - 3.25em;
-        margin-top: .25em;
-      } // end nav
+        height: calc( 100vh - 9.25em );
 
-      main {
-        float: right;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin-top: 0;
-        margin-right: 3%;
-
-        ul {
-          width: calc( 100% / 12 * 12);
+        nav {
+          font-size: $sizeNavFont - 3.5em;
         }
 
-        .card {
-          margin: 10em 2.5em;
+        main .card {
+          width: 6em;
+          height: 6em;
+        }
+
+      } // end portrait min-width 450px
+
+      @media screen and ( min-width: 525px ) {
+
+        height: calc( 100vh - 15em );
+
+        h1 {
+          font-size: 5.5em;
+          margin-top: 1.5em;
+        }
+
+        nav {
+          font-size: $sizeNavFont - 2.2em;
+        }
+
+        main {
+          margin-top: 12em;
+        }
+
+        main .card {
           width: 9em;
           height: 9em;
-          // width: calc( 100% / 12 * 2);
         }
 
-        .card-icon {
-          font-size: 6.25em;
-          color: #fff;
+      } // end portrait min-width 525px
+
+      @media screen and ( min-width: 830px ) {
+
+        h1 {
+          font-size: 5.5em;
+          margin-top: 2em;
         }
-      } // end main
+
+        nav {
+          font-size: $sizeNavFont - 2.2em;
+        }
+
+        main {
+          margin-top: 7em;
+        }
+
+        main .card {
+          width: 9em;
+          height: 9em;
+        }
+
+      } // end portrait min-width 830px
+
+    } // end orientation: portrait
+
+/****************************************************************
+LANDSCAPE MEDIA QUERIES
+****************************************************************/
+
+    @media screen and ( orientation: landscape ) {
+
+      // header {
+      //   float: left;
+      //   width: 40%;
+      // }
+      //
+      // h1 {
+      //   font-size: $sizeMainFont - 3.5em;
+      //   margin-top: $marginH1Top + .75em;
+      //   margin-left: 4.75%;
+      // }
+      //
+      // nav {
+      //   font-size: $sizeNavFont - 3.25em;
+      //   margin-top: .25em;
+      // } // end nav
+      //
+      // main {
+      //   float: right;
+      //   justify-content: flex-end;
+      //   align-items: flex-start;
+      //   margin-top: 0;
+      //   margin-right: 3%;
+      //
+      //   ul {
+      //     width: calc( 100% / 12 * 12);
+      //   }
+      //
+      //   .card {
+      //     margin: 10em 2.5em;
+      //     width: 9em;
+      //     height: 9em;
+      //     // width: calc( 100% / 12 * 2);
+      //   }
+      //
+      //   .card-icon {
+      //     font-size: 6.25em;
+      //     color: #fff;
+      //   }
+      // } // end main
+      //
+      //
+      //
+      //
+      //
+      @media screen and ( min-width: 550px ) {
+
+        min-height: calc( 100vh - 12.5em );
+
+        h1 {
+          font-size: 6.25em;
+          margin-top: 1em;
+        }
+
+        nav {
+          font-size: $sizeNavFont - 1.7em;
+        }
+
+        main {
+          margin-top: 3em;
+        }
+
+        main .card {
+          width: 9em;
+          height: 9em;
+          margin: 0 4em;
+        }
+
+    } // end landscape min-width 550px
+
+      @media screen and ( min-width: 700px ) {
+
+      } // end portrait min-width 740px
+
+      @media screen and ( min-width: 1350px ) {
+
+      } // end portrait min-width 740px
 
     } // end orientation: landscape
-
-    // @media screen and ( min-width: 900px ) {
-    //
-    //   header {
-    //     width: 48%;
-    //   }
-    //
-    //   h1 {
-    //     font-size: 7.25em;
-    //   }
-    //
-    //   nav {
-    //     font-size: 4.25em;
-    //     margin: 1em auto;
-    //
-    //   } // end nav
-    //
-    //   main {
-    //     width: 42%;
-    //     margin-top: 15%;
-    //   }
-    //
-    // } // end media query min-width: 920px
 
   } // end .easy-wrapper
 

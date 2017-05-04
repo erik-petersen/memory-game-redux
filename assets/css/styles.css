@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Barrio|Comfortaa");
+/****************************************************************
+GLOBAL PROPERTIES
+****************************************************************/
+/*************************** BODY ******************************/
 html {
   width: 100%; }
 
@@ -8,12 +12,17 @@ html {
 a {
   text-decoration: none !important; }
 
-.fa-lightbulb-o {
-  color: firebrick; }
-
 body {
   background-color: #efefeb; }
+  body .fa-lightbulb-o {
+    color: firebrick; }
   body .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: firebrick;
     -webkit-transition: background 1s, transform 1s;
     transition: background 1s, transform 1s;
     -webkit-transform: rotateY(0deg);
@@ -23,6 +32,8 @@ body {
     -moz-transform: rotateY(0deg);
     -o-transform: rotateY(0deg); }
     body .card .card-icon {
+      visibility: hidden;
+      color: #fff;
       -webkit-transform: rotateY(180deg);
       -webkit-transform: translateY(180deg);
       -transform: rotateY(180deg);
@@ -32,85 +43,200 @@ body {
   body .modal-btn,
   body .losing-modal-btn {
     display: none; }
-  @media screen and (orientation: portrait) {
-    body #myModal .modal-lg,
-    body #myLosingModal .modal-lg {
-      margin-top: 50%; }
-      body #myModal .modal-lg .modal-content,
-      body #myLosingModal .modal-lg .modal-content {
-        background-color: darkseagreen;
-        border-radius: 1.5em; }
-      body #myModal .modal-lg .modal-header,
-      body #myLosingModal .modal-lg .modal-header {
-        text-align: center; }
-        body #myModal .modal-lg .modal-header .close,
-        body #myLosingModal .modal-lg .modal-header .close {
-          margin-left: -5em;
-          font-size: 4.5em; }
-        body #myModal .modal-lg .modal-header .modal-title,
-        body #myLosingModal .modal-lg .modal-header .modal-title {
-          font-size: 5em;
-          color: #333; }
-      body #myModal .modal-lg .modal-body,
-      body #myLosingModal .modal-lg .modal-body {
-        text-align: center; }
-        body #myModal .modal-lg .modal-body p,
-        body #myLosingModal .modal-lg .modal-body p {
-          font-size: 4em;
-          color: #333; }
-      body #myModal .modal-lg .btn-close,
-      body #myLosingModal .modal-lg .btn-close {
-        font-size: 3.5em; } }
-  @media screen and (orientation: landscape) {
-    body #myModal .modal-lg,
-    body #myLosingModal .modal-lg {
-      margin-top: 8%; }
-      body #myModal .modal-lg .modal-content,
-      body #myLosingModal .modal-lg .modal-content {
-        background-color: darkseagreen;
-        border-radius: 1.5em; }
-      body #myModal .modal-lg .modal-header,
-      body #myLosingModal .modal-lg .modal-header {
-        text-align: center; }
-        body #myModal .modal-lg .modal-header .close,
-        body #myLosingModal .modal-lg .modal-header .close {
-          font-size: .5em;
-          margin-left: -5em;
-          font-size: 3em; }
-        body #myModal .modal-lg .modal-header .modal-title,
-        body #myLosingModal .modal-lg .modal-header .modal-title {
-          font-size: 3.5em;
-          color: #333; }
-      body #myModal .modal-lg .modal-body,
-      body #myLosingModal .modal-lg .modal-body {
-        text-align: center; }
-        body #myModal .modal-lg .modal-body p,
-        body #myLosingModal .modal-lg .modal-body p {
-          font-size: 3.85em;
-          color: #333; }
-      body #myModal .modal-lg .btn-close,
-      body #myLosingModal .modal-lg .btn-close {
-        font-size: 2.25em; } }
+  body .modal-lg .modal-header {
+    text-align: center; }
+    body .modal-lg .modal-header .modal-title {
+      color: #333; }
+  body .modal-lg .modal-body {
+    text-align: center; }
+    body .modal-lg .modal-body p {
+      color: #333; }
+  body .modal-lg .modal-content {
+    background-color: darkseagreen;
+    border-radius: 1.5em; }
 
+/************************** FOOTER *****************************/
 footer {
   background-color: grey;
-  height: 9em; }
+  height: 3.5em;
+  text-align: center; }
   footer .fa-heartbeat {
-    font-size: 3.5em;
+    font-size: 2.25em;
     color: #fff;
-    float: right;
-    margin-top: .75em;
-    margin-right: 10px; }
+    margin: .25em .15em 0; }
 
-a {
-  text-decoration: none; }
-
-@media screen and (orientation: landscape) {
+/****************************************************************
+PORTRAIT MEDIA QUERIES
+****************************************************************/
+@media screen and (orientation: portrait) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 50%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      margin-left: -5em;
+      font-size: 4.5em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 3.5em; } }
+@media screen and (orientation: portrait) and (min-width: 150px) {
   footer {
-    height: 5em; }
+    height: 6.5em; }
     footer .fa-heartbeat {
-      font-size: 2.5em;
-      margin-top: .55em; } }
+      font-size: 2.4em;
+      margin: .15em 0 0; } }
+@media screen and (orientation: portrait) and (min-width: 250px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 30%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 4.5em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 3.2em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 2.25em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 1.75em; }
+
+  footer {
+    height: 3.5em; }
+    footer .fa-heartbeat {
+      margin: .25em .05em 0; } }
+@media screen and (orientation: portrait) and (min-width: 450px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 40%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 5.5em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 3.5em; }
+
+  footer {
+    height: 6.5em; }
+    footer .fa-heartbeat {
+      font-size: 2.6em;
+      margin: .7em .25em 0; } }
+@media screen and (orientation: portrait) and (min-width: 525px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 40%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 5.65em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5.35em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4.35em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 3.85em; }
+
+  footer {
+    height: 7.15em; }
+    footer .fa-heartbeat {
+      font-size: 3em;
+      margin: .65em .2em 0; } }
+@media screen and (orientation: portrait) and (min-width: 550px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 40%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 5.75em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5.5em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4.5em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 4em; }
+
+  footer {
+    height: 7.15em; }
+    footer .fa-heartbeat {
+      font-size: 3.25em;
+      margin: .65em .2em 0; } }
+/****************************************************************
+LANDSCAPE MEDIA QUERIES
+****************************************************************/
+@media screen and (orientation: landscape) and (min-width: 450px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 10%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 5.5em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 3.5em; }
+
+  footer {
+    height: 6.5em; }
+    footer .fa-heartbeat {
+      font-size: 2.75em;
+      margin: .15em .5em 0; } }
+@media screen and (orientation: landscape) and (min-width: 525px) {
+  footer {
+    height: 6.5em; }
+    footer .fa-heartbeat {
+      font-size: 2.75em;
+      margin: .15em .5em 0; } }
+@media screen and (orientation: landscape) and (min-width: 650px) {
+  footer {
+    height: 6.5em; }
+    footer .fa-heartbeat {
+      font-size: 3.75em;
+      margin: .3em .25em 0; } }
+@media screen and (orientation: landscape) and (min-width: 1000px) {
+  #myModal .modal-lg,
+  #myLosingModal .modal-lg {
+    margin-top: 12%; }
+    #myModal .modal-lg .modal-header .close,
+    #myLosingModal .modal-lg .modal-header .close {
+      font-size: 5.5em; }
+    #myModal .modal-lg .modal-header .modal-title,
+    #myLosingModal .modal-lg .modal-header .modal-title {
+      font-size: 5em; }
+    #myModal .modal-lg .modal-body p,
+    #myLosingModal .modal-lg .modal-body p {
+      font-size: 4em; }
+    #myModal .modal-lg .btn-close,
+    #myLosingModal .modal-lg .btn-close {
+      font-size: 3.5em; }
+
+  footer {
+    height: 6.5em; }
+    footer .fa-heartbeat {
+      font-size: 4.25em;
+      margin: .25em .35em 0; } }
 .home-body .home-wrapper {
   width: 75%;
   margin: 0 auto;
@@ -239,18 +365,26 @@ a {
           padding: 0 auto; } }
 
 .easy-body .easy-wrapper {
-  min-height: calc( 100vh - 14.5em );
+  /****************************************************************
+  GLOBAL PROPERTIES
+  ****************************************************************/
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  /****************************************************************
+  PORTRAIT MEDIA QUERIES
+  ****************************************************************/
+  /****************************************************************
+  LANDSCAPE MEDIA QUERIES
+  ****************************************************************/ }
   .easy-body .easy-wrapper h1 {
     font-family: "Barrio", sans-serif;
-    font-size: 8em;
+    font-size: 4em;
     margin-top: 0.75em; }
   .easy-body .easy-wrapper a {
     color: #333; }
   .easy-body .easy-wrapper nav {
     font-family: "Comfortaa", sans-serif;
-    font-size: 6.25em;
+    font-size: 2.75em;
     margin-top: .15em; }
     .easy-body .easy-wrapper nav li {
       display: inline-block;
@@ -263,51 +397,65 @@ a {
     .easy-body .easy-wrapper nav li::nth-child(2) {
       margin-top: 1.5em; }
   .easy-body .easy-wrapper main {
-    margin-top: 18em; }
+    margin-top: 2em; }
     .easy-body .easy-wrapper main ul {
       display: inline-flex; }
     .easy-body .easy-wrapper main .card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 3.25em;
-      background-color: firebrick;
-      width: 18em;
-      height: 18em;
-      cursor: pointer;
-      border-radius: 50%; }
+      margin: 0 1.25em;
+      width: 5em;
+      height: 5em; }
     .easy-body .easy-wrapper main .card-icon {
-      font-size: 10em;
-      color: #fff;
-      visibility: hidden; }
-  @media screen and (orientation: landscape) {
-    .easy-body .easy-wrapper {
-      min-height: calc( 100vh - 4.55em ); }
-      .easy-body .easy-wrapper header {
-        float: left;
-        width: 40%; }
-      .easy-body .easy-wrapper h1 {
-        font-size: 4.5em;
-        margin-top: 1.5em;
-        margin-left: 4.75%; }
-      .easy-body .easy-wrapper nav {
-        font-size: 3.25em;
-        margin-top: .25em; }
-      .easy-body .easy-wrapper main {
-        float: right;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin-top: 0;
-        margin-right: 3%; }
-        .easy-body .easy-wrapper main ul {
-          width: calc( 100% / 12 * 12); }
-        .easy-body .easy-wrapper main .card {
-          margin: 10em 2.5em;
-          width: 9em;
-          height: 9em; }
-        .easy-body .easy-wrapper main .card-icon {
-          font-size: 6.25em;
-          color: #fff; } }
+      font-size: 3.75em; }
+@media screen and (orientation: portrait) and (min-width: 250px) {
+  .easy-body .easy-wrapper {
+    height: calc( 100vh - 6.5em ); } }
+@media screen and (orientation: portrait) and (min-width: 450px) {
+  .easy-body .easy-wrapper {
+    height: calc( 100vh - 9.25em ); }
+    .easy-body .easy-wrapper nav {
+      font-size: 3em; }
+    .easy-body .easy-wrapper main .card {
+      width: 6em;
+      height: 6em; } }
+@media screen and (orientation: portrait) and (min-width: 525px) {
+  .easy-body .easy-wrapper {
+    height: calc( 100vh - 15em ); }
+    .easy-body .easy-wrapper h1 {
+      font-size: 5.5em;
+      margin-top: 1.5em; }
+    .easy-body .easy-wrapper nav {
+      font-size: 4.3em; }
+    .easy-body .easy-wrapper main {
+      margin-top: 12em; }
+    .easy-body .easy-wrapper main .card {
+      width: 9em;
+      height: 9em; } }
+@media screen and (orientation: portrait) and (min-width: 830px) {
+  .easy-body .easy-wrapper h1 {
+    font-size: 5.5em;
+    margin-top: 2em; }
+  .easy-body .easy-wrapper nav {
+    font-size: 4.3em; }
+  .easy-body .easy-wrapper main {
+    margin-top: 7em; }
+  .easy-body .easy-wrapper main .card {
+    width: 9em;
+    height: 9em; } }
+
+@media screen and (orientation: landscape) and (min-width: 550px) {
+  .easy-body .easy-wrapper {
+    min-height: calc( 100vh - 12.5em ); }
+    .easy-body .easy-wrapper h1 {
+      font-size: 6.25em;
+      margin-top: 1em; }
+    .easy-body .easy-wrapper nav {
+      font-size: 4.8em; }
+    .easy-body .easy-wrapper main {
+      margin-top: 3em; }
+    .easy-body .easy-wrapper main .card {
+      width: 9em;
+      height: 9em;
+      margin: 0 4em; } }
 
 .hard-body {
   width: 100%;

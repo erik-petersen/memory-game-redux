@@ -6,10 +6,28 @@ $colorBackgroundGrey: #efefeb;
 $colorNavHover: #ba0000;
 $colorMainFont: #333;
 $colorLightbulb: #dbdb0b;
+$colorCard: firebrick;
+$colorHeartbeat: #fff;
+$colorFooter: grey;
+// $colorModalContent: azure;
+$colorModalContent: darkseagreen;
 $sizeMainFont: 8em;
 $sizeNavFont: 6.5em;
+$sizeModalClose: 4.5em;
+$sizeModalTitle: 5em;
+$sizeModalBody: 4em;
+$sizeButtonClose: 3.5em;
+$sizeHeartbeat: 2.25em;
 $marginH1Top: .75em;
 $marginNavTop: 2.5em;
+
+
+
+/****************************************************************
+GLOBAL PROPERTIES
+****************************************************************/
+
+/*************************** BODY ******************************/
 
 html {
   width: 100%;
@@ -23,14 +41,23 @@ a {
   text-decoration: none !important;
 }
 
-.fa-lightbulb-o {
-  color: firebrick;
-}
-
 body {
+
   background-color: $colorBackgroundGrey;
 
+  .fa-lightbulb-o {
+    color: firebrick;
+  }
+
   .card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $colorCard;
+
     -webkit-transition: background 1s, transform 1s;
             transition: background 1s, transform 1s;
   -webkit-transform: rotateY( 0deg );
@@ -41,13 +68,19 @@ body {
             -o-transform: rotateY( 0deg );
 
     .card-icon {
+
+      visibility: hidden;
+      color: $colorHeartbeat
+      ;
       -webkit-transform: rotateY( 180deg );
       -webkit-transform: translateY( 180deg );
              -transform: rotateY( 180deg );
              -ms-transform: rotateY( 180deg );
              -moz-transform: rotateY( 180deg );
              -o-transform: rotateY( 180deg );
-    }
+
+    } // end .card-icon
+
   } // end .card
 
   .modal-btn,
@@ -55,139 +88,445 @@ body {
     display: none;
   }
 
+  .modal-lg {
+
+    .modal-header {
+
+      text-align: center;
+
+      .modal-title {
+        color: $colorMainFont;
+      }
+
+    } // end .modal-header
+
+    .modal-body {
+
+      text-align: center;
+
+      p {
+        color: $colorMainFont;
+      }
+
+    } // end .modal-body
+
+    .modal-content {
+      background-color: $colorModalContent;
+      border-radius: 1.5em;
+    }
+
+  } // end .modal-lg
+
+} // end body
+
+/************************** FOOTER *****************************/
+
+footer {
+
+  background-color: $colorFooter;
+  height: 3.5em;
+  text-align: center;
+
+  .fa-heartbeat {
+    font-size: $sizeHeartbeat;
+    color: $colorHeartbeat;
+    margin: .25em .15em 0;
+  }
+} // end footer
+
+/****************************************************************
+PORTRAIT MEDIA QUERIES
+****************************************************************/
+
   @media screen and ( orientation: portrait ) {
 
     #myModal,
     #myLosingModal {
 
       .modal-lg {
-        margin-top: 50%;
 
-        .modal-content {
-          // background-color: azure;
-          background-color: darkseagreen;
-          border-radius: 1.5em;
-        }
+        margin-top: 50%;
 
         .modal-header {
 
           .close {
               margin-left: -5em;
-              font-size: 4.5em;
+              font-size: $sizeModalClose;
           }
 
-          text-align: center;
-
           .modal-title {
-            font-size: 5em;
-            color: $colorMainFont;
+            font-size: $sizeModalTitle;
           }
 
         } // end .modal-header
 
         .modal-body {
-          text-align: center;
 
           p {
-            font-size: 4em;
-            color: $colorMainFont;
+            font-size: $sizeModalBody;
           }
 
         } // end .modal-body
 
         .btn-close {
-          font-size: 3.5em;
+          font-size: $sizeButtonClose;
         }
 
       } // end .modal-lg
 
     } // end #myModal
 
+    @media screen and ( min-width: 150px ) {
+
+      footer {
+
+        height: 6.5em;
+
+        .fa-heartbeat {
+          font-size: $sizeHeartbeat + .15em;
+          margin: .15em 0 0;
+        }
+
+      } // end footer
+
+    } // end min-width: 150px
+
+    @media screen and ( min-width: 250px ) {
+
+      #myModal,
+      #myLosingModal {
+
+        .modal-lg {
+
+          margin-top: 30%;
+
+          .modal-header {
+
+            .close {
+                font-size: $sizeModalClose;
+            }
+
+            .modal-title {
+              font-size: $sizeModalTitle - 1.8em;
+            }
+
+          } // end .modal-header
+
+          .modal-body {
+
+            p {
+              font-size: $sizeModalBody - 1.75em;
+            }
+
+          } // end .modal-body
+
+          .btn-close {
+            font-size: $sizeButtonClose - 1.75em;
+          }
+
+        } // end .modal-lg
+
+      } // end #myModal
+
+      footer {
+
+        height: 3.5em;
+
+        .fa-heartbeat {
+          margin: .25em .05em 0;
+        }
+
+      } // end footer
+
+    } // end media query min-width: 450px
+
+    @media screen and ( min-width: 450px ) {
+
+      #myModal,
+      #myLosingModal {
+
+        .modal-lg {
+
+          margin-top: 40%;
+
+          .modal-header {
+
+            .close {
+                font-size: $sizeModalClose + 1em;
+            }
+
+            .modal-title {
+              font-size: $sizeModalTitle;
+            }
+
+          } // end .modal-header
+
+          .modal-body {
+
+            p {
+              font-size: $sizeModalBody;
+            }
+
+          } // end .modal-body
+
+          .btn-close {
+            font-size: $sizeButtonClose;
+          }
+
+        } // end .modal-lg
+
+      } // end #myModal
+
+      footer {
+
+        height: 6.5em;
+
+        .fa-heartbeat {
+          font-size: $sizeHeartbeat + .35em;
+          margin: .7em .25em 0;
+        }
+
+      } // end footer
+
+    } // end media query min-width: 450px
+
+    @media screen and ( min-width: 525px ) {
+
+      #myModal,
+      #myLosingModal {
+
+        .modal-lg {
+
+          margin-top: 40%;
+
+          .modal-header {
+
+            .close {
+                font-size: $sizeModalClose + 1.15em;
+            }
+
+            .modal-title {
+              font-size: $sizeModalTitle + .35em;
+            }
+
+          } // end .modal-header
+
+          .modal-body {
+
+            p {
+              font-size: $sizeModalBody + .35em;
+            }
+
+          } // end .modal-body
+
+          .btn-close {
+            font-size: $sizeButtonClose + .35em;
+          }
+
+        } // end .modal-lg
+
+      } // end #myModal
+
+      footer {
+
+        height: 7.15em;
+
+        .fa-heartbeat {
+          font-size: $sizeHeartbeat + .75em;
+          margin: .65em .2em 0;
+        }
+
+      } // end footer
+
+    } // end media query min-width: 525px
+
+    @media screen and ( min-width: 550px ) {
+
+      #myModal,
+      #myLosingModal {
+
+        .modal-lg {
+
+          margin-top: 40%;
+
+          .modal-header {
+
+            .close {
+                font-size: $sizeModalClose + 1.25em;
+            }
+
+            .modal-title {
+              font-size: $sizeModalTitle + .5em;
+            }
+
+          } // end .modal-header
+
+          .modal-body {
+
+            p {
+              font-size: $sizeModalBody + .5em;
+            }
+
+          } // end .modal-body
+
+          .btn-close {
+            font-size: $sizeButtonClose + .5em;
+          }
+
+        } // end .modal-lg
+
+      } // end #myModal
+
+      footer {
+
+        height: 7.15em;
+
+        .fa-heartbeat {
+          font-size: $sizeHeartbeat + 1em;
+          margin: .65em .2em 0;
+        }
+
+      } // end footer
+
+    } // end media query min-width: 550px
+
   } // end portrait orientation
 
-  @media screen and ( orientation: landscape ) {
+/****************************************************************
+LANDSCAPE MEDIA QUERIES
+****************************************************************/
+
+@media screen and ( orientation: landscape ) {
+
+  @media screen and ( min-width: 450px ) {
 
     #myModal,
     #myLosingModal {
 
       .modal-lg {
-        margin-top: 8%;
 
-        .modal-content {
-          // background-color: azure;
-          background-color: darkseagreen;
-          border-radius: 1.5em;
-        }
+        margin-top: 10%;
 
         .modal-header {
 
           .close {
-              font-size: .5em;
-              margin-left: -5em;
-              font-size: 3em;
+              font-size: $sizeModalClose + 1em;
           }
 
-          text-align: center;
-
           .modal-title {
-            font-size: 3.5em;
-            color: $colorMainFont;
+            font-size: $sizeModalTitle;
           }
 
         } // end .modal-header
 
         .modal-body {
-          text-align: center;
 
           p {
-            font-size: 3.85em;
-            color: $colorMainFont;
+            font-size: $sizeModalBody;
           }
 
         } // end .modal-body
 
         .btn-close {
-          font-size: 2.25em;
+          font-size: $sizeButtonClose;
         }
 
       } // end .modal-lg
 
     } // end #myModal
 
-  } // end landscape orientation
+    footer {
 
-} // end body
+      height: 6.5em;
 
-footer {
+      .fa-heartbeat {
+        font-size: 2.75em;
+        margin: .15em .5em 0;
+      }
 
-  background-color: grey;
-  height: 9em;
+    } // end footer
 
-  .fa-heartbeat {
-    font-size: 3.5em;
-    color: #fff;
-    float: right;
-    margin-top: .75em;
-    margin-right: 10px;
-  }
-} // end footer
+  } // end media query min-width: 450px
 
-a {
-  text-decoration: none;
-}
+  @media screen and ( min-width: 525px ) {
 
-@media screen and ( orientation: landscape ) {
+    footer {
 
-  footer {
+      height: 6.5em;
 
-    height: 5em;
+      .fa-heartbeat {
+        font-size: 2.75em;
+        margin: .15em .5em 0;
+      }
 
-    .fa-heartbeat {
-      font-size: 2.5em;
-      margin-top: .55em;
-    }
+    } // end footer
 
-  } // end footer
+  } // end media query min-width: 525px
+
+  @media screen and ( min-width: 650px ) {
+
+    footer {
+
+      height: 6.5em;
+
+      .fa-heartbeat {
+        font-size: $sizeHeartbeat + 1.5em;
+        margin: .3em .25em 0;
+      }
+
+    } // end footer
+
+  } // end media query min-width: 650px
+
+  @media screen and ( min-width: 1000px ) {
+
+    #myModal,
+    #myLosingModal {
+
+      .modal-lg {
+
+        margin-top: 12%;
+
+        .modal-header {
+
+          .close {
+              font-size: $sizeModalClose + 1em;
+          }
+
+          .modal-title {
+            font-size: $sizeModalTitle;
+          }
+
+        } // end .modal-header
+
+        .modal-body {
+
+          p {
+            font-size: $sizeModalBody;
+          }
+
+        } // end .modal-body
+
+        .btn-close {
+          font-size: $sizeButtonClose;
+        }
+
+      } // end .modal-lg
+
+    } // end #myModal
+
+    footer {
+
+      height: 6.5em;
+
+      .fa-heartbeat {
+        font-size: $sizeHeartbeat + 2em;
+        margin: .25em .35em 0;
+      }
+
+    } // end footer
+
+  } // end media query min-width: 1000px
 
 } // end orientation: landscape
 
