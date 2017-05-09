@@ -279,10 +279,10 @@ PORTRAIT MEDIA QUERIES
 
       footer {
 
-        height: 6.5em;
+        height: 5.5em;
 
         .fa-heartbeat {
-          font-size: $sizeHeartbeat + .35em;
+          font-size: $sizeHeartbeat + .45em;
           margin: .7em .25em 0;
         }
 
@@ -329,11 +329,11 @@ PORTRAIT MEDIA QUERIES
 
       footer {
 
-        height: 7.15em;
+        height: 5em;
 
         .fa-heartbeat {
-          font-size: $sizeHeartbeat + .75em;
-          margin: .65em .2em 0;
+          font-size: $sizeHeartbeat + 1em;
+          margin: .35em .2em 0;
         }
 
       } // end footer
@@ -379,11 +379,11 @@ PORTRAIT MEDIA QUERIES
 
       footer {
 
-        height: 7.15em;
+        height: 6em;
 
         .fa-heartbeat {
-          font-size: $sizeHeartbeat + 1em;
-          margin: .65em .2em 0;
+          font-size: $sizeHeartbeat + 1.5em;
+          margin: .35em .2em 0;
         }
 
       } // end footer

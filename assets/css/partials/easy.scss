@@ -11,8 +11,8 @@ GLOBAL PROPERTIES
 
     h1 {
       font-family: $fontHeading;
-      font-size: $sizeMainFont - 4em;
-      margin-top: $marginH1Top;
+      font-size: $sizeMainFont - 5em;
+      margin-top: $marginH1Top - .25em;
     }
 
     a {
@@ -21,8 +21,8 @@ GLOBAL PROPERTIES
 
     nav {
       font-family: $fontNav;
-      font-size: $sizeNavFont - 3.75em;
-      margin-top: .15em;
+      font-size: $sizeNavFont - 4em;
+      margin-top: -.5em;
 
       li {
         display: inline-block;
@@ -43,7 +43,7 @@ GLOBAL PROPERTIES
 
     main {
 
-      margin-top: 2em;
+      margin-top: 4em;
 
       ul {
         display: inline-flex;
@@ -68,12 +68,21 @@ PORTRAIT MEDIA QUERIES
     @media screen and ( orientation: portrait ) {
 
       @media screen and ( min-width: 250px ) {
-        height: calc( 100vh - 6.5em );
+        height: calc( 100vh - 10.25em );
+
+        h1 {
+          margin-top: 2.25em;
+        }
+
+        main {
+          margin-top: 3em;
+        }
+
       }
 
       @media screen and ( min-width: 450px ) {
 
-        height: calc( 100vh - 9.25em );
+        height: calc( 100vh - 12.25em );
 
         nav {
           font-size: $sizeNavFont - 3.5em;
@@ -82,17 +91,18 @@ PORTRAIT MEDIA QUERIES
         main .card {
           width: 6em;
           height: 6em;
+
         }
 
       } // end portrait min-width 450px
 
       @media screen and ( min-width: 525px ) {
 
-        height: calc( 100vh - 15em );
+        height: calc( 100vh - 18.5em );
 
         h1 {
           font-size: 5.5em;
-          margin-top: 1.5em;
+          // margin-top: 5.5em;
         }
 
         nav {
@@ -106,6 +116,11 @@ PORTRAIT MEDIA QUERIES
         main .card {
           width: 9em;
           height: 9em;
+
+          .card-icon {
+            font-size: 6em;
+          }
+
         }
 
       } // end portrait min-width 525px
@@ -114,7 +129,6 @@ PORTRAIT MEDIA QUERIES
 
         h1 {
           font-size: 5.5em;
-          margin-top: 2em;
         }
 
         nav {
@@ -128,6 +142,11 @@ PORTRAIT MEDIA QUERIES
         main .card {
           width: 9em;
           height: 9em;
+
+          .card-icon {
+            font-size: 6em;
+          }
+
         }
 
       } // end portrait min-width 830px
@@ -140,61 +159,16 @@ LANDSCAPE MEDIA QUERIES
 
     @media screen and ( orientation: landscape ) {
 
-      // header {
-      //   float: left;
-      //   width: 40%;
-      // }
-      //
-      // h1 {
-      //   font-size: $sizeMainFont - 3.5em;
-      //   margin-top: $marginH1Top + .75em;
-      //   margin-left: 4.75%;
-      // }
-      //
-      // nav {
-      //   font-size: $sizeNavFont - 3.25em;
-      //   margin-top: .25em;
-      // } // end nav
-      //
-      // main {
-      //   float: right;
-      //   justify-content: flex-end;
-      //   align-items: flex-start;
-      //   margin-top: 0;
-      //   margin-right: 3%;
-      //
-      //   ul {
-      //     width: calc( 100% / 12 * 12);
-      //   }
-      //
-      //   .card {
-      //     margin: 10em 2.5em;
-      //     width: 9em;
-      //     height: 9em;
-      //     // width: calc( 100% / 12 * 2);
-      //   }
-      //
-      //   .card-icon {
-      //     font-size: 6.25em;
-      //     color: #fff;
-      //   }
-      // } // end main
-      //
-      //
-      //
-      //
-      //
       @media screen and ( min-width: 550px ) {
 
-        min-height: calc( 100vh - 12.5em );
+        min-height: calc( 100vh - 9em );
 
         h1 {
-          font-size: 6.25em;
-          margin-top: 1em;
+          font-size: 5em;
         }
 
         nav {
-          font-size: $sizeNavFont - 1.7em;
+          font-size: $sizeNavFont - 2.5em;
         }
 
         main {
@@ -205,15 +179,40 @@ LANDSCAPE MEDIA QUERIES
           width: 9em;
           height: 9em;
           margin: 0 4em;
+
+          .card-icon {
+            font-size: 6em;
+          }
         }
 
     } // end landscape min-width 550px
 
-      @media screen and ( min-width: 700px ) {
+      @media screen and ( min-width: 1000px ) {
+
+        main {
+          margin-top: 11em;
+        }
 
       } // end portrait min-width 740px
 
       @media screen and ( min-width: 1350px ) {
+
+        main {
+
+          margin-top: 15em;
+
+          .card {
+            width: 12em;
+            height: 12em;
+            margin: 0 4em;
+
+            .card-icon {
+              font-size: 8em;
+            }
+
+          }
+
+        }
 
       } // end portrait min-width 740px
 
