@@ -5,7 +5,7 @@
 
   .hard-wrapper {
 
-    min-height: calc( 100vh - 10em );
+    min-height: calc( 100vh - 9em );
     margin: 0 auto;
     text-align: center;
 
@@ -73,19 +73,54 @@
 
       @media screen and ( min-width: 250px ) {
 
-        height: calc( 100vh - 5em ) !important;
+        height: calc( 100vh - 5em );
 
-        .card {
-          margin: .25em .25em;
-          width: 3.05em;
-          height: 3.05em;
-        }
+        main {
+
+          margin: -.75em auto 0;
+
+          ul {
+
+            width: calc( 100% / 12 * 12 ) !important;
+
+            .card {
+              margin: .2em;
+              width: 3.15em;
+              height: 3.15em;
+            }
+
+          }
+
+        } // end main
 
       }
 
+      @media screen and ( min-width: 315px ) {
+
+        main ul {
+          width: calc( 100% / 12 * 12 ) !important;
+        }
+
+      } // end min-width: 315px
+
+      @media screen and ( min-width: 344px ) {
+
+        main ul {
+          width: calc( 100% / 12 * 12 ) !important;
+
+          .card {
+            margin: .27em;
+            width: 5em;
+            height: 5em;
+          }
+
+        }
+
+      } // end min-width: 344px
+
         @media screen and ( min-width: 450px ) {
 
-          height: calc( 100vh - 7em ) !important;
+          height: calc( 100vh - 7em );
 
           nav {
             font-size: $sizeNavFont - 3.5em;
@@ -93,29 +128,50 @@
 
           main {
 
+            margin: 2em auto 0;
+
             ul {
 
-              width: calc( 100% / 12 * 10 );
+              width: calc( 100% / 12 * 12 ) !important;
 
               .card {
-                width: 5em;
-                height: 5em;
+                width: 5.5em;
+                height: 5.5em;
               }
 
             }
-
 
           }
 
         } // end portrait min-width 450px
 
-        @media screen and ( min-width: 525px ) {
+        @media screen and ( min-width: 550px ) {
 
-          height: calc( 100vh - 13em ) !important;
+          main {
+            // margin: -1em auto 0;
+
+            .card {
+              width: 7.5em;
+              height: 7.5em;
+              margin: .35em;
+
+              .card-icon {
+                font-size: 4.5em;
+              }
+
+            }
+
+          }
+
+        } // end portrait min-width 550px
+
+        @media screen and ( min-width: 625px ) {
+
+          height: calc( 100vh - 13em );
 
           h1 {
             font-size: 5.5em;
-            margin-top: .75em;
+            margin-top: .5em;
           }
 
           nav {
@@ -123,15 +179,16 @@
           }
 
           main {
-            margin: -1.5em auto 0;
+            margin: -1em auto 0;
 
             ul {
 
-              width: calc( 100% / 12 * 10 );
+              width: calc( 100% / 12 * 12 );
 
               .card {
-                width: 5.5em;
-                height: 5.5em;
+                width: 6.5em;
+                height: 6.5em;
+                margin: .45em;
 
                 .card-icon {
                   font-size: 4em;
@@ -144,25 +201,41 @@
 
         } // end portrait min-width 525px
 
-        @media screen and ( min-width: 650px ) {
+        @media screen and ( min-width: 830px ) {
+
+          min-height: calc( 100vh - 15.8em );
+          height: calc( 100vh - 25.7em ) !important;
+
+          h1 {
+            font-size: 9em;
+            margin-top: .75em;
+          }
+
+          nav {
+            font-size: $sizeNavFont + .25em;
+          }
 
           main {
-            margin: -1.5em auto 0;
+            margin: -6.5em auto 0;
 
-            .card {
-              width: 6.5em;
-              height: 6.5em;
-              margin: .35em;
+            ul {
 
-              .card-icon {
-                font-size: 4.5em;
-              }
+              .card {
+                width: 11em;
+                height: 11em;
+                margin: 1em;
+
+                .card-icon {
+                  font-size: 4.5em;
+                }
+
+              } // end .card
 
             }
 
           }
 
-        } // end portrait min-width 650px
+        } // end portrait min-width 830px
 
     } // end orientation: portrait
 
@@ -209,13 +282,13 @@
           align-items: flex-start;
 
           ul {
-            width: calc( 100% / 12 * 7 );
-            margin: 1em auto 0;
+            width: calc( 100% / 12 * 10 );
+            margin: 2.5em auto 0;
 
             .card {
-              margin: .35em;
-              width: 7em;
-              height: 7em;
+              margin: .5em;
+              width: 7.75em;
+              height: 7.75em;
             }
 
             .card-icon {
@@ -250,7 +323,25 @@
 
         }
 
-      } // end portrait min-width 740px
+      } // end portrait min-width 1350px
+
+      @media screen and ( min-width: 1350px ) {
+
+        main {
+          min-height: calc( 100vh - 31em ) !important;
+          margin-top: 1em;
+          ul {
+
+            width: calc( 100% / 12 * 10 );
+
+            .card {
+              width: 8.5em;
+              height: 8.5em;
+              margin: .75em;
+            }
+          }
+        }
+      }
 
     } // end orientation: landscape
 
