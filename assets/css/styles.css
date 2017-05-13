@@ -585,7 +585,7 @@ LANDSCAPE MEDIA QUERIES
               width: 5em;
               height: 5em; }
             .hard-body .hard-wrapper main ul .card-icon {
-              font-size: 4.5em; } }
+              font-size: 3.35em; } }
   @media screen and (orientation: landscape) and (min-width: 1000px) {
     .hard-body .hard-wrapper main {
       min-height: calc( 100vh - 26.75em );
@@ -609,6 +609,6 @@ LANDSCAPE MEDIA QUERIES
         height: 9em;
         margin: .75em; }
         .hard-body .hard-wrapper main ul .card .card-icon {
-          font-size: 8em; } }
+          font-size: 6em; } }
 
 /*# sourceMappingURL=styles.css.map */
